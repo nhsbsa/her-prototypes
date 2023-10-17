@@ -1,45 +1,60 @@
-{% extends 'layout.html' %}
+{% extends 'layout2.html' %}
 
 {% block pageTitle %}
-  Frontend Versions
+Frontend Versions
 {% endblock %}
 
 {% block beforeContent %}
 <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-    <div class="nhsuk-width-container">
-      <ol class="nhsuk-breadcrumb__list">
-        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/home">Home</a></li>
-  
-      </ol>
-    </div>
-  </nav>
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/home">Home</a></li>
+
+    </ol>
+  </div>
+</nav>
 {% endblock %}
 
 {% block content %}
-  <div class="nhsuk-grid-row">
+<div class="nhsuk-grid-row">
 
-    <div class="nhsuk-grid-column-two-thirds">
+  <div class="nhsuk-grid-column-two-thirds">
 
-      <!-- Add your content here -->
-      <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
-        <h2 class="nhsuk-u-visually-hidden">Contents</h2>
-        <ol class="nhsuk-contents-list__list">
-          <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="#">Version 1</a>
-          </li>
-          <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="#">Version 2</a>
-          </li>
-          <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="#">Version 3</a>
-          </li>
-          <li class="nhsuk-contents-list__item">
-            <a class="nhsuk-contents-list__link" href="#">Version 4</a>
-          </li>
-        </ol>
-      </nav>
+    <!-- Add your content here -->
 
-    </div>  
+    <h1 class="govuk-heading-l" style="color: #1d70b8;">
+      Hospital Fault reporting Prototype
+    </h1>
+
+    <p>The prototype is a way of exploring ideas, and is subject to change.</p>
+    <p>This versions table below links to the Frontend / Reporter journey.</p>
+
+
+    <h2 class="govuk-heading-m">HFR Prototype Versions</h2>
+
+    <table class="govuk-table">
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Last Updated</th>
+          <th scope="col" class="govuk-table__header">Version</th>
+          <th scope="col" class="govuk-table__header">Links</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">15/10/2023</td>
+          <td class="govuk-table__cell">Version 1</td>
+          <td class="govuk-table__cell">
+            <a href="landing">Prototype</a>
+            <br>
+          </td>
+        </tr>
+
+      </tbody>
+    </table>
 
   </div>
+
+</div>
 {% endblock %}
