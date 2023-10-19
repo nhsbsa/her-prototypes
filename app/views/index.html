@@ -1,86 +1,90 @@
 {% extends 'layout.html' %}
 
 {% block pageTitle %}
-  HFR Prototype - Home
+HFR Prototype - Home
 {% endblock %}
 
 {% block beforeContent %}
 <nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-    <div class="nhsuk-width-container">
-      <ol class="nhsuk-breadcrumb__list">
-        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Home</a></li>
-  
-      </ol>
-    </div>
-  </nav>
+  <div class="nhsuk-width-container">
+    <ol class="nhsuk-breadcrumb__list">
+      <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Home</a></li>
+
+    </ol>
+  </div>
+</nav>
 {% endblock %}
 
 {% block content %}
-  <div class="nhsuk-grid-row">
+<div class="nhsuk-grid-row">
 
-    <div class="nhsuk-grid-column-full">
+  <div class="nhsuk-grid-column-full">
 
-        <ul class="nhsuk-grid-row nhsuk-card-group">
-            <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
-          
-              <div class="nhsuk-card nhsuk-card--clickable">
-                <div class="nhsuk-card__content">
-                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                    <a class="nhsuk-card__link" href="/frontend/list">Frontend</a>
-                  </h2>
-                  <p class="nhsuk-card__description">To view the various versions of the front facing report a fault page, click here</p>
-          
-                </div>
-              </div>
-          
-            </li>
-            <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
-          
-              <div class="nhsuk-card nhsuk-card--clickable">
-                <div class="nhsuk-card__content">
-                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                    <a class="nhsuk-card__link" href="/admin/list">Administrator</a>
-                  </h2>
-                  <p class="nhsuk-card__description">To view the various versions of the administrator site where trusts can be created and deactivated and modified, click here</p>
-          
-                </div>
-              </div>
-          
-            </li>
-            <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
-          
-              <div class="nhsuk-card nhsuk-card--clickable">
-                <div class="nhsuk-card__content">
-                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                    <a class="nhsuk-card__link" href="/helpdesk/list">Helpdesk</a>
-                  </h2>
-                  <p class="nhsuk-card__description">To view all versions of the helpdesk where you can view faults reported by a trust, click here</p>
-          
-                </div>
-              </div>
-          
-            </li>
-            <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
-          
-              <div class="nhsuk-card nhsuk-card--clickable">
-                <div class="nhsuk-card__content">
-                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                    <a class="nhsuk-card__link" href="/tests">Tests</a>
-                  </h2>
-                  <p class="nhsuk-card__description">To view static pages that we need to test, click here</p>
-          
-                </div>
-              </div>
-          
-            </li>
-          </ul>
+    <ul class="nhsuk-grid-row nhsuk-card-group">
+      <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+        <div class="nhsuk-card nhsuk-card--clickable">
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+              <a class="nhsuk-card__link" href="/frontend/list">Frontend</a>
+            </h2>
+            <p class="nhsuk-card__description">To view the various versions of the front facing report a fault page,
+              click here</p>
+
+          </div>
+        </div>
+
+      </li>
+      <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+        <div class="nhsuk-card nhsuk-card--clickable">
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+              <a class="nhsuk-card__link" href="/admin/list">Administrator</a>
+            </h2>
+            <p class="nhsuk-card__description">To view the various versions of the administrator site where trusts can
+              be created and deactivated and modified, click here</p>
+
+          </div>
+        </div>
+
+      </li>
+      <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+        <div class="nhsuk-card nhsuk-card--clickable">
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+              <a class="nhsuk-card__link" href="/helpdesk/list">Helpdesk</a>
+            </h2>
+            <p class="nhsuk-card__description">To view all versions of the helpdesk where you can view faults reported
+              by a trust, click here</p>
+
+          </div>
+        </div>
+
+      </li>
+      <li class="nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+        <div class="nhsuk-card nhsuk-card--clickable">
+          <div class="nhsuk-card__content">
+            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+              <a class="nhsuk-card__link" href="/tests">Variants Tests</a>
+            </h2>
+            <p class="nhsuk-card__description">To view static pages of two variant solutions to the same problem, click
+              here</p>
+
+          </div>
+        </div>
+
+      </li>
+    </ul>
 
 
-      <!-- Add your content here -->
-
-    </div>  
+    <!-- Add your content here -->
 
   </div>
+
+</div>
 
 
 {% endblock %}

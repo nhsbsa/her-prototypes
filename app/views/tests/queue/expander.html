@@ -1,0 +1,308 @@
+{% extends 'layout2.html' %}
+
+{% block pageTitle %}
+Blank template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+
+        <!-- Add your content here -->
+
+        {{ backLink({
+        "href": "javascript:history.go(-1)",
+        "text": "Go Back"
+        }) }} {% from 'action-link/macro.njk' import actionLink %} <h1 class="nhsuk-heading-xl">NHS
+            Example Trust: Fault queue</h1>
+
+        {{ actionLink({
+        "text": "View Processed faults",
+        "href": "#"
+        }) }}
+
+        {% from 'button/macro.njk' import button %}
+
+        {{ button({
+        "text": "Refresh"
+        }) }}
+
+        <div class="nhsuk-expander-group">
+
+            <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text nhsuk-u-font-size-24">
+                        Door handle missing <strong class="nhsuk-tag nhsuk-tag--yellow"
+                            style="margin-left: 416px; text-align: end;">
+                            Inconvenient
+                        </strong>
+                    </span>
+                </summary>
+
+                <strong class="nhsuk-details__text">Reported: 12 September 2023 at 1:44 pm </strong>
+                <div class="nhsuk-details__text">
+                    <p>Where: Admin office</p>
+
+                    <div class="nhsuk-form-group">
+
+                        <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+                            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+                                <div class="nhsuk-details__text">
+                                    <p>Select if this fault is a duplicate, or enter a Reference ID</p>
+                            </legend>
+
+
+                            <div class="nhsuk-radios nhsuk-radios--conditional">
+
+                                <div class="nhsuk-radios__item nhsuk-radios--inline">
+                                    <input class="nhsuk-radios__input" id="contact-1" name="contact" type="radio"
+                                        value="email" aria-controls="conditional-contact-1" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
+                                        Mark as unique
+                                    </label>
+                                </div>
+
+                                <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden"
+                                    id="conditional-contact-1">
+
+                                    <div class="nhsuk-form-group">
+                                        <label class="nhsuk-label" for="email">
+                                            Helpdesk reference ID
+                                        </label>
+                                        <input class="nhsuk-input nhsuk-u-width-two-thirds" id="email" name="email"
+                                            type="text">
+                                    </div>
+
+                                </div>
+
+                                <div class="nhsuk-radios__item nhsuk-radios--inline">
+                                    <input class="nhsuk-radios__input" id="contact-2" name="contact" type="radio"
+                                        value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
+                                        Duplicate
+                                    </label>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+                    </div>
+
+                    <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
+                        Submit
+                    </button>
+
+                </div>
+            </details>
+
+            <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text nhsuk-u-font-size-24">
+                        Window not closing <strong class="nhsuk-tag nhsuk-tag--yellow"
+                            style="margin-left: 424px; text-align: end;">
+                            Inconvenient
+                        </strong>
+                    </span>
+                </summary>
+
+                <strong class="nhsuk-details__text">Reported: 10 October 2023 at 5:14 pm </strong>
+                <div class="nhsuk-details__text">
+                    <p>Where: Reception</p>
+
+                    <div class="nhsuk-form-group">
+
+                        <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+                            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+                                <div class="nhsuk-details__text">
+                                    <p>Select if this fault is a duplicate, or enter a Reference ID</p>
+                            </legend>
+
+
+                            <div class="nhsuk-radios nhsuk-radios--conditional">
+
+                                <div class="nhsuk-radios__item nhsuk-radios--inline">
+                                    <input class="nhsuk-radios__input" id="contact-1" name="contact" type="radio"
+                                        value="email" aria-controls="conditional-contact-1" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
+                                        Mark as unique
+                                    </label>
+                                </div>
+
+                                <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden"
+                                    id="conditional-contact-1">
+
+                                    <div class="nhsuk-form-group">
+                                        <label class="nhsuk-label" for="email">
+                                            Helpdesk reference ID
+                                        </label>
+                                        <input class="nhsuk-input nhsuk-u-width-two-thirds" id="email" name="email"
+                                            type="text">
+                                    </div>
+
+                                </div>
+
+                                <div class="nhsuk-radios__item nhsuk-radios--inline">
+                                    <input class="nhsuk-radios__input" id="contact-2" name="contact" type="radio"
+                                        value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
+                                        Duplicate
+                                    </label>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+                    </div>
+
+                    <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
+                        Submit
+                    </button>
+
+                </div>
+            </details>
+
+            <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text nhsuk-u-font-size-24">
+                        Elevator not working <strong class="nhsuk-tag nhsuk-tag--green"
+                            style="margin-left: 416px; text-align: end;">
+                            New
+                        </strong>
+                    </span>
+                </summary>
+
+                <strong class="nhsuk-details__text">Reported: 29 September 2023 at 5:44 pm </strong>
+                <div class="nhsuk-details__text">
+                    <p>Where: MAU</p>
+
+                    <div class="nhsuk-form-group">
+
+                        <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+                            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+                                <div class="nhsuk-details__text">
+                                    <p>Select if this fault is a duplicate, or enter a Reference ID</p>
+                            </legend>
+
+
+                            <div class="nhsuk-radios nhsuk-radios--conditional">
+
+                                <div class="nhsuk-radios__item nhsuk-radios--inline">
+                                    <input class="nhsuk-radios__input" id="contact-1" name="contact" type="radio"
+                                        value="email" aria-controls="conditional-contact-1" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
+                                        Mark as unique
+                                    </label>
+                                </div>
+
+                                <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden"
+                                    id="conditional-contact-1">
+
+                                    <div class="nhsuk-form-group">
+                                        <label class="nhsuk-label" for="email">
+                                            Helpdesk reference ID
+                                        </label>
+                                        <input class="nhsuk-input nhsuk-u-width-two-thirds" id="email" name="email"
+                                            type="text">
+                                    </div>
+
+                                </div>
+
+                                <div class="nhsuk-radios__item nhsuk-radios--inline">
+                                    <input class="nhsuk-radios__input" id="contact-2" name="contact" type="radio"
+                                        value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
+                                        Duplicate
+                                    </label>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+                    </div>
+
+                    <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
+                        Submit
+                    </button>
+
+                </div>
+            </details>
+
+            <details class="nhsuk-details nhsuk-expander">
+                <summary class="nhsuk-details__summary">
+                    <span class="nhsuk-details__summary-text nhsuk-u-font-size-24">
+                        Window not closing <strong class="nhsuk-tag nhsuk-tag--green"
+                            style="margin-left: 432px; text-align: end;">
+                            New
+                        </strong>
+                    </span>
+                </summary>
+
+                <strong class="nhsuk-details__text">Reported: 29 September 2023 at 5:44 pm </strong>
+                <div class="nhsuk-details__text">
+                    <p>Where: Reception</p>
+
+                    <div class="nhsuk-form-group">
+
+                        <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+                            <legend class="nhsuk-fieldset__legend nhsuk-fieldset__legend--m">
+                                <div class="nhsuk-details__text">
+                                    <p>Select if this fault is a duplicate, or enter a Reference ID</p>
+                            </legend>
+
+
+                            <div class="nhsuk-radios nhsuk-radios--conditional">
+
+                                <div class="nhsuk-radios__item nhsuk-radios--inline">
+                                    <input class="nhsuk-radios__input" id="contact-1" name="contact" type="radio"
+                                        value="email" aria-controls="conditional-contact-1" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
+                                        Mark as unique
+                                    </label>
+                                </div>
+
+                                <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden"
+                                    id="conditional-contact-1">
+
+                                    <div class="nhsuk-form-group">
+                                        <label class="nhsuk-label" for="email">
+                                            Helpdesk reference ID
+                                        </label>
+                                        <input class="nhsuk-input nhsuk-u-width-two-thirds" id="email" name="email"
+                                            type="text">
+                                    </div>
+
+                                </div>
+
+                                <div class="nhsuk-radios__item nhsuk-radios--inline">
+                                    <input class="nhsuk-radios__input" id="contact-2" name="contact" type="radio"
+                                        value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
+                                        Duplicate
+                                    </label>
+                                </div>
+
+                            </div>
+                        </fieldset>
+
+                    </div>
+
+                    <button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="submit">
+                        Submit
+                    </button>
+
+                </div>
+            </details>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+{% endblock %}
