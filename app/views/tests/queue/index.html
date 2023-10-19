@@ -1,0 +1,39 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Blank template - NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    href: "/",
+    text: "Home"
+  }) }}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+        <ul class="nhsuk-grid-row">
+            <li class="nhsuk-grid-column-two-thirds nhsuk-card-group__item">
+          
+              <div class="nhsuk-card nhsuk-card--clickable nhsuk-card--secondary">
+                <div class="nhsuk-card__content nhsuk-card__content--secondary">
+                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                    <a class="nhsuk-card__link" href="#">Urgent and emergency care services</a>
+                  </h2>
+                  <p class="nhsuk-card__description">Services the NHS provides if you need urgent or emergency medical help</p>
+          
+                </div>
+              </div>
+          
+            </li>
+          </ul>
+
+      <!-- Add your content here -->
+
+    </div>  
+
+  </div>
+{% endblock %}
