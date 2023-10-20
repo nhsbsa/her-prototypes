@@ -5,4 +5,6 @@ const router = express.Router();
 
 // Add your routes here - above the module.exports line
 
+router.use('/frontend', require('./views/frontend/_routes.js'))
+
 module.exports = router;

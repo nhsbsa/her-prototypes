@@ -1,0 +1,89 @@
+{% extends 'layout2.html' %}
+
+{% block pageTitle %}
+Welcome - Report a Fault - NHS
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="nhsuk-width-container">
+    <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+            <strong class="govuk-tag govuk-phase-banner__content__tag">
+                beta
+            </strong>
+            <span class="govuk-phase-banner__text">
+                This is a new service – your <a class="govuk-link" href="mailto:James.Green@dhsc.gov.uk">feedback</a>
+                will
+                help us to improve it.
+            </span>
+        </p>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+        <main class="nhsuk-width-container ">
+
+            <div class="nhsuk-width-container ">
+
+
+                <div class="nhsuk-back-link nhsuk-u-margin-top-2">
+                    <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                            <path
+                                d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+                            </path>
+                        </svg>
+                        Back to Priority</a>
+                </div>
+
+            </div>
+
+            <div class="nhsuk-main-wrapper " id="maincontent">
+
+                <form action="/trust/Nhs/dashboard" method="POST" name="dashboardForm" autocomplete="off"
+                    novalidate="true" spellcheck="false">
+
+                    <h1 id="page_title" class=" nhsuk-u-margin-bottom-2">High Priority</h1>
+
+                    <div class="nhsuk-grid-row">
+                        <div class="nhsuk-grid-column-three-quarters">
+
+                            <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--urgent">
+                                <div class="nhsuk-card--care__heading-container">
+                                    <h2 class="nhsuk-card--care__heading">
+                                        <span role="text"><span class="nhsuk-u-visually-hidden">Urgent advice:
+                                            </span>High priority, please call the helpdesk</span>
+                                    </h2>
+                                    <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+                                </div>
+
+                                <div class="nhsuk-card__content">
+                                    <p class="nhsuk-card__description">This is a health and safety issue or an
+                                        emergency. Please stop using this site and call the helpdesk. <br><br>The
+                                        helpdesk can be reached on <a href="tel:0208">0208</a> or extension 123</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <a href="urgency" class="nhsuk-button">
+                        Continue
+                    </a>
+
+            </div>
+        </main>
+
+    </div>
+
+</div>
+{% endblock %}

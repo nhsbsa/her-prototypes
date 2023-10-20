@@ -27,7 +27,7 @@ Welcome - Report a Fault - NHS
 
 
 <div class="nhsuk-grid-row">
-    <div class="nhsuk-grid-column-three-quatrers">
+    <div class="nhsuk-grid-column-three-quarters">
 
         <main class="nhsuk-width-container ">
 
@@ -54,54 +54,57 @@ Welcome - Report a Fault - NHS
 
                 <div class="nhsuk-form-group">
 
-                    <fieldset class="nhsuk-fieldset" id="urgencyType-fieldset">
-                        <legend class="nhsuk-fieldset__legend">
+                    <form method="post">
 
-                        </legend>
+                        <fieldset class="nhsuk-fieldset" id="urgencyType-fieldset">
+                            <legend class="nhsuk-fieldset__legend">
 
-                        <div class="nhsuk-radios  nhsuk-radios--inline nhsuk-u-!-font-weight-bold">
+                            </legend>
 
-                            <div class="nhsuk-radios__item">
-                                <input class="nhsuk-radios__input" id="urgencyType" name="urgencyType" type="radio"
-                                    value="0">
-                                <label class="nhsuk-label nhsuk-radios__label" for="urgencyType"
-                                    id="urgencyType-0-label">
-                                    This fault is a health and safety issue or an emergency for people around it.
-                                    Or, the area is unavailable and unusable.
-                                </label>
+                            <div class="nhsuk-radios  nhsuk-radios--inline nhsuk-u-!-font-weight-bold">
+
+                                <div class="nhsuk-radios__item">
+                                    <input class="nhsuk-radios__input" id="urgencyType" name="urgencyType" type="radio"
+                                        value="high">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="urgencyType"
+                                        id="urgencyType-0-label">
+                                        This fault is a health and safety issue or an emergency for people around it.
+                                        Or, the area is unavailable and unusable.
+                                    </label>
+                                </div>
+
+
+                                <div class="nhsuk-radios__item">
+                                    <input class="nhsuk-radios__input" id="urgencyType-1" name="urgencyType"
+                                        type="radio" value="medium">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="urgencyType-1"
+                                        id="urgencyType-1-label">
+                                        This fault is not a health and safety issue or an emergency for people around
+                                        it, but is very inconvenient to the department.
+                                    </label>
+                                </div>
+
+
+                                <div class="nhsuk-radios__item">
+                                    <input class="nhsuk-radios__input" id="urgencyType-2" name="urgencyType"
+                                        type="radio" value="low">
+                                    <label class="nhsuk-label nhsuk-radios__label" for="urgencyType-2"
+                                        id="urgencyType-2-label">
+                                        This fault is not a health and safety issue or an emergency for people around
+                                        it, nor is it inconvenient to the department.
+                                    </label>
+                                </div>
+
                             </div>
-
-
-                            <div class="nhsuk-radios__item">
-                                <input class="nhsuk-radios__input" id="urgencyType-1" name="urgencyType" type="radio"
-                                    value="1">
-                                <label class="nhsuk-label nhsuk-radios__label" for="urgencyType-1"
-                                    id="urgencyType-1-label">
-                                    This fault is not a health and safety issue or an emergency for people around
-                                    it, but is very inconvenient to the department.
-                                </label>
-                            </div>
-
-
-                            <div class="nhsuk-radios__item">
-                                <input class="nhsuk-radios__input" id="urgencyType-2" name="urgencyType" type="radio"
-                                    value="2">
-                                <label class="nhsuk-label nhsuk-radios__label" for="urgencyType-2"
-                                    id="urgencyType-2-label">
-                                    This fault is not a health and safety issue or an emergency for people around
-                                    it, nor is it inconvenient to the department.
-                                </label>
-                            </div>
-
-                        </div>
-                    </fieldset>
+                        </fieldset>
 
                 </div>
 
-                <a href="urgency" class="nhsuk-button">
+                <button class="nhsuk-button" id="back_button" data-prevent-double-click="true" type="submit">
                     Continue
-                </a>
+                </button>
 
+                </form>
             </div>
         </main>
 
