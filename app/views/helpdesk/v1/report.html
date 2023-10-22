@@ -1,0 +1,259 @@
+{% extends 'layoutasis.html' %}
+
+{% block pageTitle %}
+  Fault Operator Prototype v1
+{% endblock %}
+
+{% block header %}
+{{ header({
+  "service": {
+      "name": "HFR Fault Operator Prototype V1",
+      "href": " "
+    },
+    "showNav": "false",
+    "showSearch": "false"
+  })
+}}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+
+  <div class="nhsuk-grid-column-full">
+    <div class="nhsuk-back-link">
+
+      <a class="nhsuk-back-link__link" href="/helpdesk/v1/faultlist">
+        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+          aria-hidden="true" height="24" width="24">
+          <path
+            d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+          </path>
+        </svg>
+        Back to Fault List</a>
+    </div>
+
+    <div>
+      <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-4">Report Summary</h1>
+    </div>
+
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-full">
+        <h3 class="nhsuk-heading-m">Leaking Pipe</h3>
+        </div>
+    </div>
+
+    <div class="nhsuk-grid-row">
+
+      <div class="nhsuk-grid-column-full">
+
+        <dl class="nhsuk-summary-list">
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Name
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              Jane Foster
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Email
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              jane@nhs.net
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Phone Number
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              73213 98763
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Building
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              John House
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Room Number
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              76
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Door Number (top right side of the door)
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              -
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Zone
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              -
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Location Description
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              -
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Description
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              door fell on my head
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Urgency Type
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              Inconvenient
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Detailed Fault Description
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              <p>The door shook and rubmled and came crashing down violently and broke the person's head</p>
+            </dd>
+
+          </div>
+
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Additional Information
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              <p> - </p>
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Possible Risk of Infection
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              No
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Infection Risk Description
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              -
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              PPE Required
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              -
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Access Restricted
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              Yes
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Access Description
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              Nurses Station
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Access Contact
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              -
+            </dd>
+
+          </div>
+
+          <div class="nhsuk-summary-list__row">
+            <dt class="nhsuk-summary-list__key">
+              Photos
+            </dt>
+            <dd class="nhsuk-summary-list__value">
+              -
+            </dd>
+
+          </div>
+
+        </dl>
+
+      </div>
+    </div>
+
+    <a href="/helpdesk/v1/update"><button class="nhsuk-button" data-module="nhsuk-button"
+        type="button"> Update Status
+    </button>
+  </a>
+  </div>
+</div>
+
+
+
+
+
+
+{% endblock %}

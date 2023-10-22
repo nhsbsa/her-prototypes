@@ -1,0 +1,180 @@
+{% extends 'layoutasis.html' %}
+
+{% block pageTitle %}
+  Trust Administrator Prototype v1
+{% endblock %}
+
+{% block header %}
+{{ header({
+  "service": {
+      "name": "HFR Trust Administrator Prototype V1",
+      "href": " "
+    },
+    "showNav": "false",
+    "showSearch": "false"
+  })
+}}
+{% endblock %}
+
+{% block beforeContent %} 
+<div class="app-phase-banner  nhsuk-u-padding-top-1 nhsuk-u-padding-bottom-1">
+    <div class="nhsuk-width-container app-phase-banner__container">
+      <p class="nhsuk-body-s app-phase-banner__content nhsuk-u-margin-bottom-1">
+        <strong class="nhsuk-tag app-phase-banner__tag">
+          PROTOTYPE
+        </strong>
+        <span class="app-phase-banner__text">
+        This is a prototype - your <a href="#">feedback</a> will help us improve it.
+        </span>
+      </p>
+      <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1">
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+<h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-3">Trusts</h1>
+<p class="nhsuk-body">This is a list of the Trusts that are on the Report a Fault service. Click a Trust to edit, which includes the option to disable the Trust.</p>
+
+<a href="/admin/v1/addtrust"><button class="nhsuk-button" data-module="nhsuk-button"
+                type="submit">Add trust
+            </button>
+</a>
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+        <div>
+            <ul class="nhsuk-grid-row">
+                <li class="nhsuk-grid-column-full nhsuk-card-group__item">
+              
+                  <div class="nhsuk-card nhsuk-card--clickable nhsuk-u-margin-bottom-1">
+                    <div class="nhsuk-card__content nhsuk-card__content--primary">
+                      <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                        <a class="nhsuk-card__link" href="/admin/v1/edittrust">Addenbrookes</a>
+                      </h2>
+                      <p class="nhsuk-card__description">Site: <a href="#" class="nhsuk-link">Add</a></p>
+                    </div>
+                  </div>
+              
+                </li>
+
+                <li class="nhsuk-grid-column-full nhsuk-card-group__item">
+              
+                    <div class="nhsuk-card nhsuk-card--clickable nhsuk-u-margin-bottom-1">
+                      <div class="nhsuk-card__content nhsuk-card__content--primary">
+                        <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                          <a class="nhsuk-card__link" href="/admin/v1/edittrust">Royal Free Barnett Hospital</a>
+                        </h2>
+                        <p class="nhsuk-card__description">Site: <a href="#" class="nhsuk-link">BarGenHos</a></p>
+                      </div>
+                    </div>
+                
+                  </li>
+
+                  <li class="nhsuk-grid-column-full nhsuk-card-group__item">
+              
+                    <div class="nhsuk-card nhsuk-card--clickable nhsuk-u-margin-bottom-1">
+                      <div class="nhsuk-card__content nhsuk-card__content--primary">
+                        <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                          <a class="nhsuk-card__link" href="/admin/v1/edittrust">BirmSolMH</a>
+                        </h2>
+                        <p class="nhsuk-card__description">Site: <a href="#" class="nhsuk-link">Bir</a></p>
+                      </div>
+                    </div>
+                
+                  </li>
+
+                  <li class="nhsuk-grid-column-full nhsuk-card-group__item">
+              
+                    <div class="nhsuk-card nhsuk-card--clickable nhsuk-u-margin-bottom-1">
+                      <div class="nhsuk-card__content nhsuk-card__content--primary">
+                        <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                          <a class="nhsuk-card__link" href="/admin/v1/edittrust">Addenbrookes</a>
+                        </h2>
+                        <p class="nhsuk-card__description">Site: <a href="#" class="nhsuk-link">Add</a></p>
+                      </div>
+                    </div>
+                
+                  </li>
+  
+                  <li class="nhsuk-grid-column-full nhsuk-card-group__item">
+                
+                      <div class="nhsuk-card nhsuk-card--clickable nhsuk-u-margin-bottom-1">
+                        <div class="nhsuk-card__content nhsuk-card__content--primary">
+                          <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                            <a class="nhsuk-card__link" href="/admin/v1/edittrust">Royal Free Barnett Hospital</a>
+                          </h2>
+                          <p class="nhsuk-card__description">Site: <a href="#" class="nhsuk-link">BarGenHos</a></p>
+                        </div>
+                      </div>
+                  
+                    </li>
+  
+                    <li class="nhsuk-grid-column-full nhsuk-card-group__item">
+                
+                      <div class="nhsuk-card nhsuk-card--clickable nhsuk-u-margin-bottom-1">
+                        <div class="nhsuk-card__content nhsuk-card__content--primary">
+                          <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                            <a class="nhsuk-card__link" href="/admin/v1/edittrust">BirmSolMH</a>
+                          </h2>
+                          <p class="nhsuk-card__description">Site: <a href="#" class="nhsuk-link">Bir</a></p>
+                        </div>
+                      </div>
+                  
+                    </li>
+
+                    <li class="nhsuk-grid-column-full nhsuk-card-group__item">
+              
+                        <div class="nhsuk-card nhsuk-card--clickable nhsuk-u-margin-bottom-1">
+                          <div class="nhsuk-card__content nhsuk-card__content--primary">
+                            <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                              <a class="nhsuk-card__link" href="/admin/v1/edittrust">Addenbrookes</a>
+                            </h2>
+                            <p class="nhsuk-card__description">Site: <a href="#" class="nhsuk-link">Add</a></p>
+                          </div>
+                        </div>
+                    
+                      </li>
+      
+                      <li class="nhsuk-grid-column-full nhsuk-card-group__item">
+                    
+                          <div class="nhsuk-card nhsuk-card--clickable nhsuk-u-margin-bottom-1">
+                            <div class="nhsuk-card__content nhsuk-card__content--primary">
+                              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                                <a class="nhsuk-card__link" href="/admin/v1/edittrust">Royal Free Barnett Hospital</a>
+                              </h2>
+                              <p class="nhsuk-card__description">Site: <a href="#" class="nhsuk-link">BarGenHos</a></p>
+                            </div>
+                          </div>
+                      
+                        </li>
+      
+                        <li class="nhsuk-grid-column-full nhsuk-card-group__item">
+                    
+                          <div class="nhsuk-card nhsuk-card--clickable nhsuk-u-margin-bottom-1">
+                            <div class="nhsuk-card__content nhsuk-card__content--primary">
+                              <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                                <a class="nhsuk-card__link" href="/admin/v1/edittrust">BirmSolMH</a>
+                              </h2>
+                              <p class="nhsuk-card__description">Site: <a href="#" class="nhsuk-link">Bir</a></p>
+                            </div>
+                          </div>
+                      
+                        </li>
+              </ul>
+        </div>
+    </div>
+</div>
+
+<a href="/admin/v1/addtrust"><button class="nhsuk-button" data-module="nhsuk-button"
+    type="submit">Add trust
+</button>
+</a>
+
+</div>
+</div>
+ 
+
+{% endblock %}

@@ -1,0 +1,338 @@
+{% extends 'layoutasis.html' %}
+
+{% block pageTitle %}
+  Trust Administrator Prototype v1
+{% endblock %}
+
+{% block header %}
+{{ header({
+  "service": {
+      "name": "HFR Trust Administrator Prototype V1",
+      "href": " "
+    },
+    "showNav": "true",
+    "showSearch": "false"
+  })
+}}
+{% endblock %}
+
+{% block beforeContent %} 
+<div class="app-phase-banner  nhsuk-u-padding-top-1 nhsuk-u-padding-bottom-1">
+    <div class="nhsuk-width-container app-phase-banner__container">
+      <p class="nhsuk-body-s app-phase-banner__content nhsuk-u-margin-bottom-1">
+        <strong class="nhsuk-tag app-phase-banner__tag">
+          PROTOTYPE
+        </strong>
+        <span class="app-phase-banner__text">
+        This is a prototype - your <a href="#">feedback</a> will help us improve it.
+        </span>
+      </p>
+      <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1">
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-full">
+        <div class="nhsuk-back-link">
+
+            <a class="nhsuk-back-link__link" href="/admin/v1/trusts">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                aria-hidden="true" height="24" width="24">
+                <path
+                  d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+                </path>
+              </svg>
+              Back to Trusts</a>
+          </div>
+<h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-3">Add a Trust</h1>
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-one-half">
+
+
+          <div>
+            <h2 class="nhsuk-heading-l nhsuk-u-margin-bottom-2">Name of trust</h2>
+                <p>This will be used to identify the Trust in the system.</p>
+             
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="trust_name">
+                  Name of Trust
+                </label>
+                <input class="nhsuk-input" id="trust_name" name="trust_name" type="text">
+              </div>
+
+          </div>
+
+          <br>
+          <div>
+            <h2 class="nhsuk-heading-l nhsuk-u-margin-bottom-2">Allowed Domains</h2>
+                <p>The Report a Fault service checks the email address of the reporter, against domains listed here, to ensure the person making the report is allowed to do so. Include here all domains for email addresses you want to allow to use the service. For example; "nhs.net".</p>
+             
+                <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="allowed_domain">
+                      Allowed domains
+                    </label>
+                    <div class="nhsuk-hint" id="allowed_domain">
+                        Add one entry per line, or comma separated.
+                    </div>
+                    <textarea class="nhsuk-textarea" id="allowed_domains" name="allowed_domains" rows="5" aria-describedby="allowed_domain"></textarea>
+                  </div>
+
+          </div>
+
+          <br>
+          <div>
+            <h2 class="nhsuk-heading-l nhsuk-u-margin-bottom-2">Helpdesk operator email addresses</h2>
+                <p>When a fault is reported, it appears in the fault dashboard, but a fault email is also sent to one or more addresses, such as a central mailbox for a helpdesk. Include here any email addresses that should receive the fault report emails. For example; helpdesk operators, helpdesk managers, FM managers.</p>
+             
+                <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="operator_email">
+                      Helpdesk Operator Email Addresses
+                    </label>
+                    <div class="nhsuk-hint" id="operator_email">
+                        Add one entry per line, or comma separated.
+                    </div>
+                    <textarea class="nhsuk-textarea" id="operator_emails" name="operator_emails" rows="5" aria-describedby="operator_emails"></textarea>
+                  </div>
+
+          </div>
+
+          <br>
+          <div>
+            <h2 class="nhsuk-heading-l nhsuk-u-margin-bottom-2">Report summary email addresses</h2>
+                <p>Each week, every fault that is reported for this Trust is listed in a report summary and sent to one or more addresses. Include here any email addresses that should receive the weekly fault report summary, for example helpdesk, helpdesk manager, FM manager.</p>
+             
+                <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="summary_email">
+                      Reports Email Addresses
+                    </label>
+                    <div class="nhsuk-hint" id="summary_emails">
+                        Add one entry per line, or comma separated.
+                    </div>
+                    <textarea class="nhsuk-textarea" id="summary_emails" name="summary_emails" rows="5" aria-describedby="summary_emails"></textarea>
+                  </div>
+
+          </div>
+
+          <br>
+          <div>
+            <h2 class="nhsuk-heading-l nhsuk-u-margin-bottom-2">Helpdesk phone number</h2>
+                <p>The full telephone number for the helpdesk. This will appear to users in case they want to use the phone option or if they want to report dangerous or urgent faults.</p>
+             
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="helpdesk_phone">
+                  Helpdesk phone number
+                </label>
+                <input class="nhsuk-input" id="helpdesk_phone" name="helpdesk_phone" type="tel">
+              </div>
+
+          </div>
+
+          <br>
+          <div>
+            <h2 class="nhsuk-heading-l nhsuk-u-margin-bottom-2">Helpdesk extension</h2>
+                <p>The full telephone number for the helpdesk. This will appear to users in case they want to use the phone option or if they want to report dangerous or urgent faults.</p>
+             
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="helpdesk_ext">
+                  Helpdesk extension
+                </label>
+                <input class="nhsuk-input" id="helpdesk_ext" name="helpdesk_ext" type="number">
+              </div>
+
+          </div>
+
+          <br>
+          <div>
+            <h2 class="nhsuk-heading-l">Location Options</h2>
+            <p class="nhsuk-body">Each Trust has it's own method to specify a location, on site.</p>
+            <p class="nhsuk-body">Some Trusts require only one value, such as room number. Others need several values.</p>
+            <p class="nhsuk-body">This section allows each Trust to have a custom configuration to suit its needs when asking for a location description:</p>
+            <ul class="nhsuk-list nhsuk-list--bullet">
+                <li>The first field is required, it is always shown to the reporter and must be filled in. It's label can be changed to suit the Trust, e.g. 'room number', 'PFI number', etc.</li>
+                
+                <li>The next 4 fields, ‘location input’ (1-4), are optional and each one can be configured with:</li>
+              </ul>
+
+              <ol class="nhsuk-list nhsuk-list--number">
+                <li>Label: Specify the information needed from the reporter, e.g. ‘Building Name’, ‘Floor number’, etc.</li>
+                <li>Required: Tick this box if you require the reporter to add this information. Leave blank if the information is optional.</li>
+              </ol>
+        </div>
+
+        <br>
+        <div>
+            <h3 class="nhsuk-heading-m">Required location field</h3>
+            <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="location_label">
+                  Label for first location field
+                </label>
+                <input class="nhsuk-input" id="helpdesk_ext" name="helpdesk_ext" type="text">
+              </div>
+        </div>
+          
+        <br>
+        <div>
+            <h3 class="nhsuk-heading-m">Optional location fields</h3>
+            <form>
+
+                <div class="nhsuk-form-group">
+              
+                  <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+               
+                    <div class="nhsuk-checkboxes nhsuk-checkboxes--conditional">
+              
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="contact-1" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-1" aria-expanded="false">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                          Location input 1
+                        </label>
+                      </div>
+              
+                      <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-contact-1">
+              
+                        <div class="nhsuk-form-group">
+                          <label class="nhsuk-label" for="email">
+                            Label
+                          </label>
+                          <input class="nhsuk-input nhsuk-u-width-two-thirds" id="email" name="email" type="text">
+
+                          <div class="nhsuk-checkboxes__item nhsuk-u-margin-top-4">
+                            <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+                            <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+                              Required
+                            </label>
+                          </div>
+                        </div>
+              
+                      </div>
+              
+                      <div class="nhsuk-checkboxes__item">
+                        <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox" value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
+                        <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                          Location input 2
+                        </label>
+                      </div>
+              
+                      <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-contact-2">
+              
+                        <div class="nhsuk-form-group">
+                          <label class="nhsuk-label" for="phone">
+                            Label
+                          </label>
+                          <input class="nhsuk-input nhsuk-u-width-two-thirds" id="phone" name="phone" type="text">
+                          <div class="nhsuk-checkboxes__item nhsuk-u-margin-top-4">
+                            <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+                            <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+                              Required
+                            </label>
+                          </div>
+                        </div>
+                        </div>
+
+
+                        <div class="nhsuk-checkboxes__item">
+                            <input class="nhsuk-checkboxes__input" id="contact-3" name="contact" type="checkbox" value="email" aria-controls="conditional-contact-3" aria-expanded="false">
+                            <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-3">
+                              Location input 3
+                            </label>
+                          </div>
+                  
+                          <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-contact-3">
+                  
+                            <div class="nhsuk-form-group">
+                              <label class="nhsuk-label" for="email">
+                                Label
+                              </label>
+                              <input class="nhsuk-input nhsuk-u-width-two-thirds" id="email" name="email" type="text">
+    
+                              <div class="nhsuk-checkboxes__item nhsuk-u-margin-top-4">
+                                <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+                                  Required
+                                </label>
+                              </div>
+                            </div>
+                  
+                          </div>
+                  
+                          <div class="nhsuk-checkboxes__item">
+                            <input class="nhsuk-checkboxes__input" id="contact-4" name="contact" type="checkbox" value="phone" aria-controls="conditional-contact-4" aria-expanded="false">
+                            <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                              Location input 4
+                            </label>
+                          </div>
+                  
+                          <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-contact-4">
+                  
+                            <div class="nhsuk-form-group">
+                              <label class="nhsuk-label" for="phone">
+                                Label
+                              </label>
+                              <input class="nhsuk-input nhsuk-u-width-two-thirds" id="phone" name="phone" type="text">
+                              <div class="nhsuk-checkboxes__item nhsuk-u-margin-top-4">
+                                <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+                                <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+                                  Required
+                                </label>
+                              </div>
+                            </div>
+                            </div>
+              
+                      </div>
+
+              
+                      </div>
+              
+                    </div>
+                  </fieldset>
+              
+                </div>
+              
+              </form>
+
+        
+        </div>
+
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-one-half">
+                <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--feature">
+                    <div class="nhsuk-card--care__heading-container">
+                      <h2 class="nhsuk-card--care__heading nhsuk-u-font-size-24 nhsuk-input--width-20">
+                        <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>Save changes?</span>
+                      </h2>
+                      <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+                    </div>
+                    
+                    <div class="nhsuk-card__content">
+                    
+                  <ul class="nhsuk-list nhsuk-list--tick">
+                    <li>
+                      <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" aria-hidden="true" width="34" height="34">
+                        <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12" stroke="#007f3b"></path>
+                      </svg>
+                      Saving this screen makes these changes immediately available to users
+                    </li>
+                  </ul>
+                  
+                    </div>
+                  </div>
+        </div>
+        </div>
+      
+
+        
+
+<a href="/admin/v1/trusts"><button class="nhsuk-button" data-module="nhsuk-button"
+    type="submit">Edit Trust
+</button>
+</a>
+
+</div>
+</div>
+ 
+
+{% endblock %}
