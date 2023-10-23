@@ -1,0 +1,138 @@
+{% extends 'layout2.html' %}
+
+{% block pageTitle %}
+Welcome - Report a Fault - NHS
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="nhsuk-width-container">
+    <div class="govuk-phase-banner">
+        <p class="govuk-phase-banner__content">
+            <strong class="govuk-tag govuk-phase-banner__content__tag">
+                beta
+            </strong>
+            <span class="govuk-phase-banner__text">
+                This is a new service – your <a class="govuk-link" href="mailto:James.Green@dhsc.gov.uk">feedback</a>
+                will
+                help us to improve it.
+            </span>
+        </p>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-three-quarters">
+
+        <main class="nhsuk-width-container ">
+
+            <div class="nhsuk-width-container ">
+
+                <div class="nhsuk-back-link nhsuk-u-margin-top-2">
+                    <a class="nhsuk-back-link__link" href="javascript:history.go(-1)">
+                        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                            <path
+                                d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+                            </path>
+                        </svg>
+                        Back to Priority</a>
+                </div>
+
+            </div>
+
+            <div class="nhsuk-main-wrapper " id="maincontent">
+
+                <h1 id="page_title" class=" nhsuk-u-margin-bottom-2">Please upload a photo of the fault</h1>
+
+                <p class="nhsuk-heading-m nhsuk-u-margin-bottom-0 nhsuk-u-font-size-22 nhsuk-u-font-weight-normal">
+                    You can add one or more photos to help show the problem. This step is optional, but extremely
+                    useful to the helpdesk.</p>
+
+                <div class="nhsuk-grid-row">
+                    <div class="nhsuk-grid-column-three-quarters">
+
+
+                        <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--non-urgent">
+                            <div class="nhsuk-card--care__heading-container">
+                                <h2 class="nhsuk-card--care__heading nhsuk-u-font-size-24">
+                                    <span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice:
+                                        </span>Please</span>
+                                </h2>
+                                <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+                            </div>
+
+                            <div class="nhsuk-card__content">
+
+                                <ul class="nhsuk-list nhsuk-list--tick">
+                                    <li>
+                                        <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="none" aria-hidden="true" width="34" height="34">
+                                            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12"
+                                                stroke="#007f3b"></path>
+                                        </svg>
+                                        <strong>DO</strong> show the fault clearly and in focus
+                                    </li>
+                                </ul>
+                                <ul class="nhsuk-list nhsuk-list--tick">
+                                    <li>
+                                        <svg class="nhsuk-icon nhsuk-icon__tick" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" fill="none" aria-hidden="true" width="34" height="34">
+                                            <path stroke-width="4" stroke-linecap="round" d="M18.4 7.8l-8.5 8.4L5.6 12"
+                                                stroke="#007f3b"></path>
+                                        </svg>
+                                        <strong>DO</strong> upload a maximum of 5 photos
+                                    </li>
+                                </ul>
+                                <ul class="nhsuk-list nhsuk-list--tick">
+                                    <li>
+                                        <svg class="nhsuk-icon nhsuk-icon__cross" xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                                            <path
+                                                d="M17 18.5c-.4 0-.8-.1-1.1-.4l-10-10c-.6-.6-.6-1.6 0-2.1.6-.6 1.5-.6 2.1 0l10 10c.6.6.6 1.5 0 2.1-.3.3-.6.4-1 .4z"
+                                                fill="#d5281b"></path>
+                                            <path
+                                                d="M7 18.5c-.4 0-.8-.1-1.1-.4-.6-.6-.6-1.5 0-2.1l10-10c.6-.6 1.5-.6 2.1 0 .6.6.6 1.5 0 2.1l-10 10c-.3.3-.6.4-1 .4z"
+                                                fill="#d5281b"></path>
+                                        </svg>
+                                        <strong>DO NOT</strong> show patients, patient data (e.g names or medial
+                                        charts), visitors or staff
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+
+                        <div class="govuk-form-group">
+                            <label class="govuk-label nhsuk-u-font-weight-normal" for="photo_attachment">
+                                Choose photo from your device.
+                            </label>
+
+                            <input class="govuk-file-upload" id="photo_attachment" name="photo_attachment" type="file"
+                                accept="image/*">
+                        </div>
+
+                        <button class="nhsuk-button nhsuk-button--secondary" id="process_photo_button"
+                            data-prevent-double-click="true" name="process_photo_button" type="submit">
+                            Upload this photo
+                        </button>
+
+                    </div>
+                </div>
+
+                <a href="risk" class="nhsuk-button">
+                    Continue
+                </a>
+
+            </div>
+        </main>
+
+    </div>
+
+</div>
+{% endblock %}
