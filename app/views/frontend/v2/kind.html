@@ -51,20 +51,20 @@ Welcome - Report a Fault - NHS
                 <form action="/trust/Nhs/dashboard" method="POST" name="dashboardForm" autocomplete="off"
                     novalidate="true" spellcheck="false">
 
-                    <h1 id="page_title" class=" nhsuk-u-margin-bottom-2">What kind of fault is it?</h1>
+                    <h1 id="page_title" class=" nhsuk-u-margin-bottom-2">Describe the fault</h1>
 
                     <div class="nhsuk-grid-row">
                         <div class="nhsuk-grid-column-full">
-                            <p class="nhsuk-heading-m nhsuk-!-margin-0 nhsuk-u-font-size-22 nhsuk-u-font-weight-normal">
+                            <p>
                                 Please use the fields below to describe the fault in as much detail as possible.</p>
                         </div>
                     </div>
 
                     <div class="nhsuk-grid-row">
-                        <div class="nhsuk-grid-column-one-half">
+                        <div class="nhsuk-grid-column-three-quarters">
 
                             <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-u-font-weight-bold" for="search_faults_description"
+                                <label class="nhsuk-label " for="search_faults_description"
                                     id="search_faults_description-label">
                                     Summarise the fault. For example "Leaking Pipe"
                                 </label>
@@ -73,12 +73,69 @@ Welcome - Report a Fault - NHS
                             </div>
 
                             <div class="nhsuk-form-group">
-                                <label class="nhsuk-label nhsuk-u-font-weight-bold" for="fault_desc_notes"
-                                    id="fault_desc_notes-label">
+                                <label class="nhsuk-label " for="fault_desc_notes" id="fault_desc_notes-label">
                                     Describe the fault in more detail
                                 </label>
                                 <textarea class="nhsuk-textarea nhsuk-input--width-30  " id="fault_desc_notes"
                                     name="fault_desc_notes" rows="5" aria-required="false" maxlength="1000"></textarea>
+                            </div>
+
+
+
+                            <h2 id="page_title" class=" nhsuk-u-margin-bottom-2">Priority</h2>
+
+                            <p class="nhsuk-hint nhsuk-u-margin-bottom-2">How urgent would you deem this fault to be?
+                            </p>
+
+                            <div class="nhsuk-form-group">
+
+                                <form method="post">
+
+                                    <fieldset class="nhsuk-fieldset" id="urgencyType-fieldset">
+                                        <legend class="nhsuk-fieldset__legend">
+
+                                        </legend>
+
+                                        <div class="nhsuk-radios  nhsuk-radios--inline nhsuk-u-!-font-weight-bold">
+
+                                            <div class="nhsuk-radios__item">
+                                                <input class="nhsuk-radios__input" id="urgencyType" name="urgencyType"
+                                                    type="radio" value="high">
+                                                <label class="nhsuk-label nhsuk-radios__label" for="urgencyType"
+                                                    id="urgencyType-0-label">
+                                                    This fault is a health and safety issue or an emergency for people
+                                                    around it.
+                                                    Or, the area is unavailable and unusable.
+                                                </label>
+                                            </div>
+
+
+                                            <div class="nhsuk-radios__item">
+                                                <input class="nhsuk-radios__input" id="urgencyType-1" name="urgencyType"
+                                                    type="radio" value="medium">
+                                                <label class="nhsuk-label nhsuk-radios__label" for="urgencyType-1"
+                                                    id="urgencyType-1-label">
+                                                    This fault is not a health and safety issue or an emergency for
+                                                    people around
+                                                    it, but is very inconvenient to the department.
+                                                </label>
+                                            </div>
+
+
+                                            <div class="nhsuk-radios__item">
+                                                <input class="nhsuk-radios__input" id="urgencyType-2" name="urgencyType"
+                                                    type="radio" value="low">
+                                                <label class="nhsuk-label nhsuk-radios__label" for="urgencyType-2"
+                                                    id="urgencyType-2-label">
+                                                    This fault is not a health and safety issue or an emergency for
+                                                    people around
+                                                    it, nor is it inconvenient to the department.
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                    </fieldset>
+
                             </div>
 
                             <a href="urgency" class="nhsuk-button">
