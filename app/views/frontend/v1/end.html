@@ -1,0 +1,50 @@
+{% extends 'layoutasis.html' %}
+
+{% block pageTitle %}
+  Report a Fault Prototype v1
+{% endblock %}
+
+{% block header %}
+{{ header({
+  "service": {
+      "name": "Report a Fault Prototype V1",
+      "href": " "
+    },
+    "showNav": "false",
+    "showSearch": "false"
+  })
+}}
+{% endblock %}
+
+{% block beforeContent %} 
+<div class="app-phase-banner  nhsuk-u-padding-top-1 nhsuk-u-padding-bottom-1">
+    <div class="nhsuk-width-container app-phase-banner__container">
+      <p class="nhsuk-body-s app-phase-banner__content nhsuk-u-margin-bottom-1">
+        <strong class="nhsuk-tag app-phase-banner__tag">
+          PROTOTYPE
+        </strong>
+        <span class="app-phase-banner__text">
+        This is a prototype - your <a href="#">feedback</a> will help us improve it.
+        </span>
+      </p>
+      <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1">
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-full">
+        <h1 class="nhsuk-heading-xl">Thank you!</h1>
+        <p class="nhsuk-body">Your report has been sent to the helpdesk. They will add it to their system, and you'll receive an email once the fault has been allocated a job number.</p>
+        <p class="nhsuk-body">Thank you for helping make the Trust a better place for everybody.</p>
+      
+      <!-- Add your content here -->
+    
+      <a href="/frontend/v1"><button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button"
+        type="button">Start a new report
+    </button>
+  </a>
+    </div>  
+  </div>
+{% endblock %}
