@@ -35,10 +35,10 @@
 {% block content %}
   <div class="nhsuk-grid-row">
 
-    <div class="nhsuk-grid-column-two-thirds">
+    <div class="nhsuk-grid-column-full">
         <div class="nhsuk-back-link">
 
-            <a class="nhsuk-back-link__link" href="/frontend/v2/otherinfo">
+            <a class="nhsuk-back-link__link" href="/frontend/v2a/wherefault">
               <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                 aria-hidden="true" height="24" width="24">
                 <path
@@ -48,47 +48,38 @@
               Go back</a>
           </div>
 
-        <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-2">Tell us who you are</h1>
-        <p class="nhsuk-body">We ask for your name and email so we can contact you with an update, as well as in case any more information is needed</p>
+        <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-3">What kind of fault is it?</h1>
+        <p class="nhsuk-body">Please use the fields below to describe the fault in as much detail as possible.</p>
     
-
       <!-- Add your content here -->
       <div class="nhsuk-grid-row">
 
-        <div class="nhsuk-grid-column-two-thirds">
+        <div class="nhsuk-grid-column-one-half">
             <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="input-width-20">
-                  Your name
+                <label class="nhsuk-label" for="example">
+                 Summarize the fault. 
                 </label>
-                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+                <div class="nhsuk-hint" id="fault-summary">
+                    For example "Leaking Pipe"    
+                </div>
+                <input class="nhsuk-input" id="example" name="example" type="text">
               </div>
 
               <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="input-width-20">
-                  Your trust email
+                <label class="nhsuk-label" for="location-details">
+                    Describe the fault in more detail
                 </label>
-                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+                <textarea class="nhsuk-textarea" id="location-details" name="location-details" rows=" 5 " aria-describedby="location-details"></textarea>
               </div>
 
-              <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="input-width-20">
-                  What is the best number to contact you on?
-                </label>
-                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-10" name="test-width-20" type="tel">
-              </div>
-    
- 
-              
+        </div>
       </div>
-
-
-
-    </div>  
-    <a href="/frontend/v2/summary"><button class="nhsuk-button" data-module="nhsuk-button"
+      
+      <a href="/frontend/v2a/priority"><button class="nhsuk-button" data-module="nhsuk-button"
         type="button">Continue
     </button>
   </a>
-
     </div>  
+
   </div>
 {% endblock %}

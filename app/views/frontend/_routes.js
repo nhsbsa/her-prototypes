@@ -17,15 +17,15 @@ router.post('/v1/priority', function (req, res) {
 });
 
 // second routes
-router.post('/v2/priority', function (req, res) {
+router.post('/v2a/priority', function (req, res) {
 
     let urgencyType = req.session.data['fault-priority'];
 
     if (urgencyType === 'high') {
-        res.redirect('/frontend/v2/highurgency');
+        res.redirect('/frontend/v2a/highurgency');
 
     } else {
-        res.redirect('/frontend/v2/lowurgency');
+        res.redirect('/frontend/v2a/lowurgency');
     }
 });
 
