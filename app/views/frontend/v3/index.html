@@ -1,0 +1,75 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Report a Fault Prototype v3
+{% endblock %}
+
+{% block header %}
+{{ header({
+  "service": {
+      "name": "Report a Fault Prototype v3",
+      "href": " "
+    },
+    "showNav": "false",
+    "showSearch": "false"
+  })
+}}
+{% endblock %}
+
+{% block beforeContent %} 
+<div class="app-phase-banner  nhsuk-u-padding-top-1 nhsuk-u-padding-bottom-1">
+    <div class="nhsuk-width-container app-phase-banner__container">
+      <p class="nhsuk-body-s app-phase-banner__content nhsuk-u-margin-bottom-1">
+        <strong class="nhsuk-tag app-phase-banner__tag">
+          PROTOTYPE
+        </strong>
+        <span class="app-phase-banner__text">
+        This is a prototype - your feedback will help us improve it.
+        </span>
+      </p>
+      <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1">
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">Report a fault at your trust</h1>
+        <p class="nhsuk-body">This website will walk you through the steps to report a fault. It should take about two minutes. Once done, you can opt to receive a copy of the report.</p>
+        <p class="nhsuk-body">You can do this from a smartphone, tablet or desktop computer. You can include a photo of the problem if reporting by smartphone or tablet.</p>
+        <div class="nhsuk-warning-callout">
+            <h3 class="nhsuk-warning-callout__label">
+              <span role="text">
+                <span class="nhsuk-u-visually-hidden">Important: </span>
+                Is this a health and safety issue?
+              </span>
+            </h3>
+            <p> If this is a health and safety issue, or the area unavailable or unusable; 
+                <br>
+                <br>
+                <strong>DO NOT</strong> use this online service.</p>
+                  <p>Please call the helpdesk on <a href="tel:73242342">7324 2342</a> or extension 324</p>
+          </div>
+        <p class="nhsuk-body">This service is an additional option to calling the helpdesk, to make fault reporting more convenient.</p>
+        <p>This service is for building maintenance issues only e.g. faults with the physical condition of the building and facilities.<br>
+            <br>
+            This does not cover soft facilities management services e.g. cleaning, catering, laundry etc.</p>
+
+        <h2>Before you start</h2>
+        <p class="nhsuk-body nhsuk-u-margin-bottom-2">You'll need:</p>
+        <ul class="nhsuk-list nhsuk-list--bullet">
+  <li>The location of the fault</li>
+  <li>Your estimate of the urgency</li>
+  <li>Photo of the fault (optional)</li>
+        </ul>
+ 
+      <!-- Add your content here -->
+    
+      <a href="/frontend/v3/wherefault"><button class="nhsuk-button" data-module="nhsuk-button"
+        type="button">Start
+    </button>
+  </a>
+    </div>  
+  </div>
+{% endblock %}
