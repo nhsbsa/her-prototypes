@@ -1,13 +1,13 @@
 {% extends 'layout.html' %}
 
 {% block pageTitle %}
-  Report a Fault Prototype v3
+  Report a Fault Prototype v4 (offline)
 {% endblock %}
 
 {% block header %}
 {{ header({
   "service": {
-      "name": "Report a Fault Prototype v3",
+      "name": "Report a Fault Prototype v4 (offline)",
       "href": " "
     },
     "showNav": "false",
@@ -38,7 +38,7 @@
     <div class="nhsuk-grid-column-two-thirds">
         <div class="nhsuk-back-link">
 
-            <a class="nhsuk-back-link__link" href="/frontend/v3">
+            <a class="nhsuk-back-link__link" href="/frontend/v4/infectionrisk">
               <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
                 aria-hidden="true" height="24" width="24">
                 <path
@@ -48,54 +48,47 @@
               Go back</a>
           </div>
 
-        <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-3">Where is the fault?</h1>
-        <p class="nhsuk-body">Please tell us where the fault is</p>
+        <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-2">Tell us who you are</h1>
+        <p class="nhsuk-body">Please give us your name and contact details so we can contact you if we need more information or to give you an update on your report.</p>
     
+
       <!-- Add your content here -->
       <div class="nhsuk-grid-row">
 
-        <div class="nhsuk-grid-column-full">
+        <div class="nhsuk-grid-column-two-thirds">
             <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="example">
-                  PFI number
+                <label class="nhsuk-label" for="input-width-20">
+                  Your name
                 </label>
-                <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text">
+                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
               </div>
 
               <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="example">
-                  Wing (optional)
+                <label class="nhsuk-label" for="input-width-20">
+                  Your Trust email
                 </label>
-                <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text">
+                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
               </div>
 
               <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="example">
-                  Floor (optional)
+                <label class="nhsuk-label" for="input-width-20">
+                  Your phone number
                 </label>
-                <input class="nhsuk-input nhsuk-input--width-20" id="example" name="example" type="text">
+                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-10" name="test-width-20" type="tel">
               </div>
-
-            
-
-              <div class="nhsuk-form-group nhsuk-u-width-two-thirds">
-                <label class="nhsuk-label" for="location-details">
-                    More details (optional)
-                </label>
-                <div class="nhsuk-hint" id="contact-hint">
-                  For example, 'the fault is on the fifth floor lobby next to the vending machine.'
-                </div>
-                <textarea class="nhsuk-textarea" id="location-details" name="location-details" rows=" 5 " aria-describedby="location-details"></textarea>
-              </div>
-
-        </div>
+    
+ 
+              
       </div>
-      
-      <a href="/frontend/v3/faultkind"><button class="nhsuk-button" data-module="nhsuk-button"
+
+
+
+    </div>  
+    <a href="/frontend/v4/summary"><button class="nhsuk-button" data-module="nhsuk-button"
         type="button">Continue
     </button>
   </a>
-    </div>  
 
+    </div>  
   </div>
 {% endblock %}

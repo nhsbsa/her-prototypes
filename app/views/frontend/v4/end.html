@@ -1,13 +1,13 @@
 {% extends 'layout.html' %}
 
 {% block pageTitle %}
-  Report a Fault Prototype v3
+  Report a Fault Prototype v4 (offline)
 {% endblock %}
 
 {% block header %}
 {{ header({
   "service": {
-      "name": "Report a Fault Prototype v3",
+      "name": "Report a Fault Prototype v4 (offline)",
       "href": " "
     },
     "showNav": "false",
@@ -35,14 +35,14 @@
 {% block content %}
         <div class="nhsuk-grid-row">
             <div class="nhsuk-grid-column-two-thirds">
-        <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-3">Thank you for reporting a fault</h1>
-        <p class="nhsuk-body">Your report has been sent to the helpdesk. Thank you for helping to make your Trust a better place for everybody.</p>
-        <h2>What happens next?</h2>
-        <p class="nhsuk-body">The helpdesk will add the fault to their system and you will get an email when the fault has been given a job number.  </p>
-       
+              <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-3">Thank you for reporting a fault</h1>
+              <p class="nhsuk-body"> You are currently offline. Your report is saved and will be sent when you connect to the internet. </p>
+              <br>
+              <p class="nhsuk-body">Please connect to the internet to start a new report. </p>
+             
       <!-- Add your content here -->
     
-      <a href="/frontend/v3"><button class="nhsuk-button" data-module="nhsuk-button"
+      <a href="/frontend/v4"><button class="nhsuk-button" data-module="nhsuk-button"
         type="button">Start a new report
     </button>
   </a>
