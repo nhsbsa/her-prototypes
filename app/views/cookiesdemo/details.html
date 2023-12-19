@@ -1,0 +1,159 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Cookies - NHS.UK prototype kit
+{% endblock %}
+
+
+{% block header %}
+{{ header({
+  "service": {
+      "name": "Report a Fault (Cookie Information)",
+      "href": " "
+    },
+    "showNav": "false",
+    "showSearch": "false"
+  })
+}}
+{% endblock %}
+
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <div class="nhsuk-back-link nhsuk-u-margin-top-2">
+        <a class="nhsuk-back-link__link" href="/cookiesdemo">
+            <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                <path
+                    d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+                </path>
+            </svg>
+            Go back</a>
+    </div>
+
+      <h1>Cookies on Report a fault</h1>
+
+      <p>
+        Cookies are small files saved on your phone, tablet or computer when you visit a website.
+      </p>
+
+      <p>
+        We use cookies to make the Report a Fault service work and collect information about how you use the service.
+      </p>
+
+      <h2>Essential cookies</h2>
+      <p>
+        Essential cookies keep your information secure while you use the Report a Fault service. We do not need to ask for permission to use them.
+      </p>
+
+        <table class="nhsuk-table nhsuk-u-margin-top-0">
+          <caption class="nhsuk-table__caption">Cookies used on the NHS.UK prototype kit</caption>
+          <thead class="nhsuk-table__head">
+            <tr class="nhsuk-table__row">
+              <th class="nhsuk-table__header" scope="col">Name</th>
+              <th class="nhsuk-table__header" scope="col">Purpose</th>
+              <th class="nhsuk-table__header" scope="col">Expires</th>
+            </tr>
+          </thead>
+          <tbody class="nhsuk-table__body">
+            <tr class="nhsuk-table__row">
+              <td class="nhsuk-table__cell" style="max-width:310px;word-break:break-all;">blank</td>
+              <td class="nhsuk-table__cell">blank</td>
+              <td class="nhsuk-table__cell" style="min-width:100px;">blank</td>
+            </tr>
+            <tr class="nhsuk-table__row">
+              <td class="nhsuk-table__cell" style="max-width:310px;word-break:break-all;">blank</td>
+              <td class="nhsuk-table__cell">blank</td>
+              <td class="nhsuk-table__cell" style="min-width:100px;">blank</td>
+            </tr>
+            <tr class="nhsuk-table__row">
+              <td class="nhsuk-table__cell" style="max-width:310px;word-break:break-all;">blank</td>
+              <td class="nhsuk-table__cell">blank</td>
+              <td class="nhsuk-table__cell" style="min-width:100px;">blank</td>
+            </tr>
+          </tbody>
+        </table>
+        <h2>Analytics cookies (optional)</h2>
+        <p>
+          With your permission, we use Google Analytics to collect data about how you use the Report a Fault service. This data helps us improve our service.
+        </p>
+
+        <p>
+          Google is not allowed to use our analytics data or share it with anyone.
+        </p>
+  
+          <table class="nhsuk-table nhsuk-u-margin-top-0">
+            <caption class="nhsuk-table__caption">Cookies used on the NHS.UK prototype kit</caption>
+            <thead class="nhsuk-table__head">
+              <tr class="nhsuk-table__row">
+                <th class="nhsuk-table__header" scope="col">Name</th>
+                <th class="nhsuk-table__header" scope="col">Purpose</th>
+                <th class="nhsuk-table__header" scope="col">Expires</th>
+              </tr>
+            </thead>
+            <tbody class="nhsuk-table__body">
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell" style="max-width:310px;word-break:break-all;">blank</td>
+                <td class="nhsuk-table__cell">blank</td>
+                <td class="nhsuk-table__cell" style="min-width:100px;">blank</td>
+              </tr>
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell" style="max-width:310px;word-break:break-all;">blank</td>
+                <td class="nhsuk-table__cell">blank</td>
+                <td class="nhsuk-table__cell" style="min-width:100px;">blank</td>
+              </tr>
+              <tr class="nhsuk-table__row">
+                <td class="nhsuk-table__cell" style="max-width:310px;word-break:break-all;">blank</td>
+                <td class="nhsuk-table__cell">blank</td>
+                <td class="nhsuk-table__cell" style="min-width:100px;">blank</td>
+              </tr>
+            </tbody>
+          </table>
+  
+
+          <div class="nhsuk-form-group">
+
+            <fieldset class="nhsuk-fieldset">
+              <legend class="nhsuk-fieldset__legend">
+                <h2 class="nhsuk-u-margin-bottom-2">
+                  Your cookie settings
+                </h2>
+              </legend>
+              <p>
+                Do you want to accept analytics cookies?
+              </p>
+          
+          <div class="nhsuk-radios nhsuk-radios--inline">
+
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="example-inline-1" name="example-inline" type="radio" value="yes">
+              <label class="nhsuk-label nhsuk-radios__label" for="example-inline-1">
+                Yes
+              </label>
+            </div>
+      
+            <div class="nhsuk-radios__item">
+              <input class="nhsuk-radios__input" id="example-inline-2" name="example-inline" type="radio" value="no">
+              <label class="nhsuk-label nhsuk-radios__label" for="example-inline-2">
+                No
+              </label>
+            </div>
+      
+          </div>
+
+          <button class="nhsuk-button nhsuk-u-margin-top-3" data-module="nhsuk-button" type="submit">
+            Save cookie settings
+          </button>
+        </fieldset>
+
+      </div>
+
+
+
+    </div>
+
+  </div>
+{% endblock %}

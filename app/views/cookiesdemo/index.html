@@ -1,0 +1,26 @@
+
+{% extends "layout-cookies.html" %}
+
+{% block content %}
+<div style="background-color: white;"><div id="nhsuk-cookie-banner" data-nosnippet="true" role="region">
+  <div class="nhsuk-cookie-banner" id="cookiebanner">
+    <div class="nhsuk-width-container"> 
+        <h2>Cookies on Report a fault</h2> 
+        <p>We've put some small files called cookies on your device to make our site work.</p>
+        <p>We'd also like to use analytics cookies. These send anonymous information about how our site is used to a service called Google Analytics. We use this information to improve our site.</p>
+        <p>Let us know if this is OK. We'll use a cookie to save your choice. You can <a id="nhsuk-cookie-banner__link" href="/cookiesdemo/details">read more about our cookies</a> before you choose.</p>
+        <div> 
+          <a href="/cookiesdemo/accept"> <button class="nhsuk-button nhsuk-u-margin-right-4" >I'm OK with analytics cookies</button></a>
+          <a href="/cookiesdemo/accept"> <button class="nhsuk-button">Do not use analytics cookies</button></a>
+        </div>
+    </div>
+  </div>
+
+  <div class="nhsuk-success-banner" id="nhsuk-cookie-confirmation-banner" style="display:none;">
+    <div class="nhsuk-width-container">
+      <p id="nhsuk-success-banner__message">You can change your cookie settings at any time using our <a id="change-cookie-settings" href="/cookiesdemo/details/">cookies page</a>.</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

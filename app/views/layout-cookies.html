@@ -1,0 +1,68 @@
+<!-- 
+  This is the main layout where you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+<!-- Extends the layout from /docs/views/template.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+</head>
+
+<body>
+
+  {% extends "template.html" %}
+
+  <!-- Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+  {% block headCSS %}
+  <link href="/css/main.css" rel="stylesheet">{% endblock %}
+  <!-- Set the page title inside the pageTitle block -->
+  {% block pageTitle %} NHS.UK prototype kit {% endblock %}
+  <!-- Header goes inside the header block -->
+  <!-- More info and code for the header can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/header -->
+  {% block header %}
+
+  {% endblock %}
+  <!-- Footer goes inside the footer block -->
+  <!-- More info and code for the footer can be found at https://beta.nhs.uk/service-manual/styles-components-patterns/footer -->
+  {% block footer %}
+  {{ footer({
+    "links": [
+      {
+        "URL": "https://www.nhsbsa.nhs.uk/our-policies/privacy/healthy-start-privacy-notice",
+        "label": "Privacy"
+      },
+      {
+        "URL": "/cookies/cookies",
+        "label": "Cookies"
+      },
+      {
+        "URL": "https://www.nhsbsa.nhs.uk/our-policies/terms-and-conditions",
+        "label": "Terms and conditions"
+      },
+      {
+        "URL": "https://www.nhsbsa.nhs.uk/our-policies/accessibility/accessibility-statement-get-help-buy-food-and-milk-healthy-start",
+        "label": "Accessibility"
+      },
+      {
+        "URL": "/clear-data",
+        "label": "Clear data"        
+      }
+    ]
+  })}}
+ 
+  {% endblock %}
+
+{% block bodyEnd %}
+  {% block scripts %}
+    {% include "includes/scripts.html" %}
+    
+    {% block pageScripts %}{% endblock %}
+  {% endblock %}
+{% endblock %}
+
+</body>
+
+</html>
