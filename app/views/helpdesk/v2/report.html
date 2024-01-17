@@ -31,63 +31,63 @@
       </div>
         
 
-        <form>
+      <form>
 
-          <div class="nhsuk-form-group">
-        
-            <fieldset class="nhsuk-fieldset">
-        
-              <div class="nhsuk-grid-column-one-third nhsuk-u-margin-top-2">
-              <div class="nhsuk-checkboxes nhsuk-checkboxes--conditional">
-        
-                <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="cafm" name="contact" type="checkbox" value="cafm" aria-controls="conditional-contact-1" aria-expanded="false">
-                  <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
-                    Add CAFM reference
+        <div class="nhsuk-form-group">
+      
+          <fieldset class="nhsuk-fieldset">
+      
+            <div class="nhsuk-grid-column-one-third nhsuk-u-margin-top-2">
+            <div class="nhsuk-checkboxes nhsuk-checkboxes--conditional">
+      
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="cafm" name="contact" type="checkbox" value="cafm" aria-controls="conditional-contact-1" aria-expanded="false" data-checkbox-exclusive data-checkbox-exclusive-group="report-action">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                  Add CAFM reference
+                </label>
+              </div>
+      
+              <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-contact-1">
+      
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="cafmid">
+                    Helpdesk reference ID
                   </label>
+                  <input class="nhsuk-input" id="cafmid" name="email" type="text">
                 </div>
-        
-                <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-contact-1">
-        
-                  <div class="nhsuk-form-group">
-                    <label class="nhsuk-label" for="cafmid">
-                      Helpdesk reference ID
+    
+                <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="comment">
+                      Additional comment
                     </label>
-                    <input class="nhsuk-input" id="cafmid" name="email" type="text">
+                    <textarea class="nhsuk-textarea" id="comment" name="comment" rows="3" aria-describedby="example-hint"></textarea>
                   </div>
       
-                  <div class="nhsuk-form-group">
-                      <label class="nhsuk-label" for="comment">
-                        Additional comment
-                      </label>
-                      <textarea class="nhsuk-textarea" id="comment" name="comment" rows="3" aria-describedby="example-hint"></textarea>
-                    </div>
-        
-                </div>
-        
+              </div>
       
+    
+            </div>
+          </div>
+
+            <div class="nhsuk-grid-column-one-third nhsuk-u-margin-top-2">
+              <div class="nhsuk-checkboxes__item">
+                <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email" data-checkbox-exclusive-group="report-action">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
+                  Mark as duplicate
+                </label>
               </div>
             </div>
 
-              <div class="nhsuk-grid-column-one-third nhsuk-u-margin-top-2">
-                <div class="nhsuk-checkboxes__item">
-                  <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email">
-                  <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-                    Mark as duplicate
-                  </label>
-                </div>
-              </div>
-
-              <div  class="nhsuk-grid-column-one-third">
-                <a class="nhsuk-button" data-module="nhsuk-button" href="/helpdesk/v2/openupdate" draggable="false" role="button">
-                  Update status
-                </a>
-              </div>
-            </fieldset>
-        
-          </div>
-        
-        </form>
+            <div class="nhsuk-grid-column-one-third">
+              <a class="nhsuk-button" data-module="nhsuk-button" href="/helpdesk/v2/firstupdate" draggable="false" role="button">
+                Update status
+              </a>
+            </div>
+          </fieldset>
+      
+        </div>
+      
+      </form>
       
     </div>
   </div>
