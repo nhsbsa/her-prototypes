@@ -10,3 +10,6 @@ Changelog for Report a fault
 
 22 January 2024 5:50PM (GMT)
 1. Fault summary was changed to Fault name on report pages (pendingreport and report)
+
+23 January 2024 4:40OM (GMT)
+1. Modification to filters section on helpdesk/v2/faultlist and helpdesk/v2/faultlist2
