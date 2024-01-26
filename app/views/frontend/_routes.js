@@ -56,3 +56,17 @@ router.post('/v4/priority', function (req, res) {
     }
 });
 module.exports = router;
+
+//v5 routes
+router.post('/v5/priority', function (req, res) {
+
+    let urgencyType = req.session.data['fault-priority'];
+
+    if (urgencyType === 'high') {
+        res.redirect('/frontend/v4/highurgency');
+
+    } else {
+        res.redirect('/frontend/v4/lowurgency');
+    }
+});
+module.exports = router;

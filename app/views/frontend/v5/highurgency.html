@@ -1,0 +1,85 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Report a Fault Prototype v5
+{% endblock %}
+
+{% block header %}
+{{ header({
+  "service": {
+      "name": "Report a Fault Prototype v5",
+      "href": " "
+    },
+    "showNav": "false",
+    "showSearch": "false"
+  })
+}}
+{% endblock %}
+
+{% block beforeContent %} 
+<div class="app-phase-banner  nhsuk-u-padding-top-1 nhsuk-u-padding-bottom-1">
+    <div class="nhsuk-width-container app-phase-banner__container">
+      <p class="nhsuk-body-s app-phase-banner__content nhsuk-u-margin-bottom-1">
+        <strong class="nhsuk-tag app-phase-banner__tag">
+          PROTOTYPE
+        </strong>
+        <span class="app-phase-banner__text">
+        This is a prototype - your feedback will help us improve it.
+        </span>
+      </p>
+      <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1">
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+              <div class="nhsuk-back-link nhsuk-u-margin-top-2">
+                    <a class="nhsuk-back-link__link" href="/frontend/v5/priority">
+                        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" aria-hidden="true" height="24" width="24">
+                            <path
+                                d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+                            </path>
+                        </svg>
+                        Go back</a>
+                </div>
+
+
+                <div>
+                  <div class="nhsuk-card nhsuk-card--care nhsuk-card--care--urgent">
+                    <div class="nhsuk-card--care__heading-container">
+                      <h2 class="nhsuk-card--care__heading">
+                        <span role="text"><span class="nhsuk-u-visually-hidden">Urgent advice: </span>Call the helpdesk</span>
+                      </h2>
+                      <span class="nhsuk-card--care__arrow" aria-hidden="true"></span>
+                    </div>
+                  
+                    <div class="nhsuk-card__content">
+                      <p>Call the helpdesk to report an emergency or health and safety issue. Do not use this online service.</p>
+                        <p>The helpdesk can be reached on <a href="tel:0744324234">074432 4234</a> or extension 332344.</p>
+                    </div>
+                  </div>
+                </div>
+
+    
+
+            
+
+
+                    <a href="/frontend/v5/priority"><button class="nhsuk-button" data-module="nhsuk-button"
+                        type="button">Back
+                    </button>
+                  </a>
+
+       
+
+
+    </div>  
+
+  </div>
+{% endblock %}
+

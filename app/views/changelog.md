@@ -1,6 +1,6 @@
 Changelog for Report a fault 
 
-19 January 2024 08:05PM (GMT)
+19 January 2024 
 1. New page designed for users to enter a new password after receiving an email (newpassword.html)
 2. "Download dataset as csv" changed to "Export to excel"
 3. New page created for password change confirmation (pwordchangeconfirm.html)
@@ -8,8 +8,14 @@ Changelog for Report a fault
 5. Deleted rows for "Delivered to CAFM" on fault update pages
 
 
-22 January 2024 5:50PM (GMT)
+22 January 2024
 1. Fault summary was changed to Fault name on report pages (pendingreport and report)
 
-23 January 2024 4:40OM (GMT)
+23 January 2024 
 1. Modification to filters section on helpdesk/v2/faultlist and helpdesk/v2/faultlist2
+
+25 January 2024 
+Where? Helpdes/v2
+1. Changed H1, Body and password reset copy on index page
+2. Changed copy from "Add CAFM reference" to "Add CAFM reference or comments."
+3. Changed inset text copy on closing confirmation page
