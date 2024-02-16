@@ -19,3 +19,10 @@ Where? Helpdes/v2
 1. Changed H1, Body and password reset copy on index page
 2. Changed copy from "Add CAFM reference" to "Add CAFM reference or comments."
 3. Changed inset text copy on closing confirmation page
+
+
+16 February 2024
+1. Changed checkbox to radio button in helpdesk/v2/report and helpdesk/v2/pendingreport
+2. Removed "Go back" from cookies details page
+3. Added expanded information for "Mark as duplicate" on pages in 1 above
+4. updated footer links 
