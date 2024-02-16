@@ -38,20 +38,20 @@
           <fieldset class="nhsuk-fieldset">
       
             <div class="nhsuk-grid-column-one-third nhsuk-u-margin-top-2">
-            <div class="nhsuk-checkboxes nhsuk-checkboxes--conditional">
+            <div class="nhsuk-radios nhsuk-radios--conditional">
       
-              <div class="nhsuk-checkboxes__item">
-                <input class="nhsuk-checkboxes__input" id="cafm" name="contact" type="checkbox" value="cafm" aria-controls="conditional-contact-1" aria-expanded="false" data-checkbox-exclusive data-checkbox-exclusive-group="report-action">
-                <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="cafm" name="contact" type="radio" value="cafm" aria-controls="conditional-contact-1" aria-expanded="false" >
+                <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
                   Add CAFM reference or comments.
                 </label>
               </div>
       
-              <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden" id="conditional-contact-1">
+              <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-1">
       
                 <div class="nhsuk-form-group">
                   <label class="nhsuk-label" for="cafmid">
-                    Helpdesk reference ID
+                    CAFM reference ID
                   </label>
                   <input class="nhsuk-input" id="cafmid" name="email" type="text">
                 </div>
@@ -70,12 +70,35 @@
           </div>
 
             <div class="nhsuk-grid-column-one-third nhsuk-u-margin-top-2">
-              <div class="nhsuk-checkboxes__item">
-                <input class="nhsuk-checkboxes__input" id="example-1" name="example" type="checkbox" value="email" data-checkbox-exclusive-group="report-action">
-                <label class="nhsuk-label nhsuk-checkboxes__label" for="example-1">
-                  Mark as duplicate
+            <div class="nhsuk-radios nhsuk-radios--conditional">
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" id="duplicate" name="duplicate" type="radio" value="duplicate" aria-controls="conditional-contact-2" aria-expanded="false" >
+                <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
+                  Mark as duplicate.
                 </label>
               </div>
+      
+              <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-2">
+      
+                <div class="nhsuk-form-group">
+                  <label class="nhsuk-label" for="cafmid">
+                    CAFM reference ID
+                  </label>
+                  <input class="nhsuk-input" id="cafmid" name="cafmid" type="text">
+                </div>
+              <p class="nhsuk-body">or</p>
+    
+                <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="faultid">
+                      Fault ID
+                    </label>
+                    <input class="nhsuk-input" id="faultid" name="faultid" type="text">
+                  </div>
+      
+              </div>
+      
+    
+            </div>
             </div>
 
             <div class="nhsuk-grid-column-one-third">
