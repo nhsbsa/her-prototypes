@@ -26,3 +26,10 @@ Where? Helpdes/v2
 2. Removed "Go back" from cookies details page
 3. Added expanded information for "Mark as duplicate" on pages in 1 above
 4. updated footer links 
+
+
+4 March 2024
+1. Radio buttons in operator dashboard were changed to stack as opposed to side by side
+2. A header was added for "Call the helpdesk" page in the emergency bpart of the report a fault flow
+3. Added a checkbox for confirmation of closing a fault - removed inset text
+4. Changed warning callout to be h2
