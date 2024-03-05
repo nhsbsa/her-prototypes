@@ -1,7 +1,7 @@
 {% extends 'layout-acc.html' %}
 
 {% block pageTitle %}
-  Fault Operator Prototype v2
+Fault Operator Prototype v2
 {% endblock %}
 
 
@@ -9,325 +9,333 @@
 <div class="nhsuk-width-container">
 
   <main class="nhsuk-main-wrapper nhsuk-u-padding-bottom-4" id="maincontent" role="main">
+    <div class="nhsuk-grid-row">
+
+      <div class="nhsuk-grid-column-full">
+        <div class="nhsuk-back-link">
+
+          <a class="nhsuk-back-link__link" href="/helpdesk/v2/faultlist">
+            <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              aria-hidden="true" height="24" width="24">
+              <path
+                d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+              </path>
+            </svg>
+            Back to fault list</a>
+        </div>
+
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+            <div>
+              <h1 class="nhsuk-heading-xl">Report summary</h1>
+            </div>
+
+            <form>
+
+              <div class="nhsuk-form-group">
+
+                <fieldset class="nhsuk-fieldset">
+
+
+                  <div class="nhsuk-radios nhsuk-radios--conditional">
+
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="contact-1" name="contact" type="radio" value="email"
+                        aria-controls="conditional-contact-1" aria-expanded="false">
+                      <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
+                        Add CAFM reference or a comment.
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-1">
+
+                      <div class="nhsuk-form-group nhsuk-u-width-two-thirds">
+                        <label class="nhsuk-label" for="example">
+                          CAFM reference ID.
+                        </label>
+                        <input class="nhsuk-input nhsuk-input--width-10" id="example" name="example" type="text">
+                      </div>
+
+                      <div class="nhsuk-form-group nhsuk-u-width-two-thirds">
+                        <label class="nhsuk-label" for="example">
+                          Additional comments.
+                        </label>
+                        <textarea class="nhsuk-textarea" id="example" name="example" rows="5"
+                          aria-describedby="example-hint"></textarea>
+                      </div>
+
+
+                    </div>
+
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="contact-2" name="contact" type="radio" value="phone"
+                        aria-controls="conditional-contact-2" aria-expanded="false">
+                      <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
+                        Mark as duplicate.
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-2">
+
+                      <div class="nhsuk-form-group nhsuk-u-width-two-thirds">
+                        <label class="nhsuk-label" for="example2">
+                          CAFM reference ID
+                        </label>
+                        <input class="nhsuk-input nhsuk-input--width-10" id="example2" name="example2" type="text">
+                      </div>
+                      <p class="nhsuk-body">
+                        or
+                      </p>
+
+                      <div class="nhsuk-form-group nhsuk-u-width-two-thirds">
+                        <label class="nhsuk-label" for="example3">
+                          Fault ID
+                        </label>
+                        <input class="nhsuk-input nhsuk-input--width-10" id="example3" name="example3" type="text">
+                      </div>
+
+
+                    </div>
+
+
+
+                  </div>
+
+                  <br>
+                  <br>
+
+
+                  <a class="nhsuk-button" data-module="nhsuk-button" href="/helpdesk/v2/openupdate" draggable="false"
+                    role="button">
+                    Update status
+                  </a>
+
+                </fieldset>
+
+
+              </div>
+            </form>
+
+
+
+ 
+    </div>
+</div>
+
 <div class="nhsuk-grid-row">
 
-  <div class="nhsuk-grid-column-full">
-    <div class="nhsuk-back-link">
+  <div class="nhsuk-grid-column-two-thirds">
 
-      <a class="nhsuk-back-link__link" href="/helpdesk/v2/faultlist">
-        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-          aria-hidden="true" height="24" width="24">
-          <path
-            d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
-          </path>
-        </svg>
-        Back to fault list</a>
-    </div>
+    <dl class="nhsuk-summary-list">
 
-    <div class="nhsuk-grid-row">
-        <div class="nhsuk-grid-column-two-thirds">
-      <div>
-        <h3 class="nhsuk-heading-m">Report summary</h3>
-      </div>
-        
-
-      <form>
-
-        <div class="nhsuk-form-group">
-
-          <fieldset class="nhsuk-fieldset">
-        
-        
-            <div class="nhsuk-radios nhsuk-radios--conditional">
-        
-              <div class="nhsuk-radios__item">
-                <input class="nhsuk-radios__input" id="contact-1" name="contact" type="radio" value="email" aria-controls="conditional-contact-1" aria-expanded="false">
-                <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
-                  Add CAFM reference or a comment.
-                </label>
-              </div>
-        
-              <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-1">
-        
-                <div class="nhsuk-form-group nhsuk-u-width-two-thirds">
-                  <label class="nhsuk-label" for="example">
-                    CAFM reference ID.
-                  </label>
-                  <textarea class="nhsuk-textarea" id="example" name="example" rows="5" aria-describedby="example-hint"></textarea>
-                </div>
-        
-                <div class="nhsuk-form-group nhsuk-u-width-two-thirds">
-                  <label class="nhsuk-label" for="example">
-                    Additional comments.
-                  </label>
-                  <textarea class="nhsuk-textarea" id="example" name="example" rows="5" aria-describedby="example-hint"></textarea>
-                </div>
-        
-        
-              </div>
-        
-              <div class="nhsuk-radios__item">
-                <input class="nhsuk-radios__input" id="contact-2" name="contact" type="radio" value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
-                <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
-                  Mark as duplicate.
-                </label>
-              </div>
-
-              <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-2">
-        
-                <div class="nhsuk-form-group nhsuk-u-width-two-thirds">
-                  <label class="nhsuk-label" for="example2">
-                    CAFM reference ID
-                  </label>
-                  <textarea class="nhsuk-textarea" id="example2" name="example2" rows="5" aria-describedby="example-hint"></textarea>
-                </div>
-                <p class="nhsuk-body">
-                  or
-                </p>
-        
-                <div class="nhsuk-form-group nhsuk-u-width-two-thirds">
-                  <label class="nhsuk-label" for="example3">
-                    Fault ID
-                  </label>
-                  <textarea class="nhsuk-textarea" id="example3" name="example3" rows="5" aria-describedby="example-hint"></textarea>
-                </div>
-        
-        
-              </div>
-        
-        
-        
-            </div>
-            
-            <br>
-            <br>
-
-
-            <a class="nhsuk-button" data-module="nhsuk-button" href="/helpdesk/v2/openupdate" draggable="false" role="button">
-              Update status
-            </a>
-
-          </fieldset>
-
-        
-        </div>
-      </form>
-      
-    </div>
-  </div>
-
-    <div class="nhsuk-grid-row">
-
-      <div class="nhsuk-grid-column-two-thirds">
-
-        <dl class="nhsuk-summary-list">
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              Fault ID
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              X0000164
-            </dd>
-
-          </div>
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              Trust site
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              Applebee site
-            </dd>
-          </div>
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              Fault name
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              Faulty door
-            </dd>
-          </div>
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              Detailed fault description
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              Somebody drove into the door
-            </dd>
-          </div>
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              Urgency rating
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              <strong class="nhsuk-tag nhsuk-tag--red">
-                EMERGENCY
-              </strong>
-            </dd>
-          </div>
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              Fault location
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              
-              Room: 2
-              
-            </dd>
-          </div>
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              Possible risk of infection
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              No, there is no risk of infection in the area
-            </dd>
-          </div>
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              Infection risk description
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              Broken glass and blood everywhere does not sound like a fun party
-            </dd>
-          </div>
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              Personal Protective Equipment required
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              Gloves and a hazmat suit
-            </dd>
-          </div>
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              Can be accessed anytime
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              No, the fault is only available at specific times
-            </dd>
-          </div>
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              Possible risk of infection
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              Yes, there is a possible risk of infection
-            </dd>
-          </div>
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              Detailed access description
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              Every day at noon the doctors go on break, but on wednesdays they have wonder wednesdays and they order take out they have all never tried before and so the ffault can be accessed only on wednesday between 2am -4am
-            </dd>
-          </div>
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              Phone number for access
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              07800005812
-            </dd>
-          </div>
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              Additional information
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              Well, now that you mention it, I think I read something about glass ticklers and I think this fault being a broken frame could be an opening for them to access the hospital. Please act fast!!!
-            </dd>
-          </div>
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              Photos uploaded
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              <a target="_blank" href="/helpdesk/v2/crack.jpg">
-                <img src="/helpdesk/v2/crack.jpg" alt="fault-image">
-              </a>
-              <a target="_blank" href="/helpdesk/v2/image.jpg">
-                <img src="/helpdesk/v2/image.jpg" alt="fault-image">
-              </a>
-              <a target="_blank" href="/helpdesk/v2/image2.jpg">
-                <img src="/helpdesk/v2/image2.jpg" alt="fault-image">
-              </a>
-              <a target="_blank" href="/helpdesk/v2/window.jpg">
-                <img src="/helpdesk/v2/window.jpg" alt="fault-image">
-              </a>
-              <a target="_blank" href="/helpdesk/v2/image3.jpg">
-                <img src="/helpdesk/v2/image3.jpg" alt="fault-image">
-              </a>
-            </dd>
-          </div>
-
-          <div class="nhsuk-summary-list__row">
-            <dt class="nhsuk-summary-list__key">
-              Reporter name
-            </dt>
-            <dd class="nhsuk-summary-list__value">
-              James Calamari Julio Iglesias Madrid Edward V
-            </dd>
-          </div>
-
-            <div class="nhsuk-summary-list__row">
-              <dt class="nhsuk-summary-list__key">
-                Reporter email
-              </dt>
-              <dd class="nhsuk-summary-list__value">
-                jamescalioiglesiasmadrid@nhs.net
-              </dd>
-              </div>
-
-              <div class="nhsuk-summary-list__row">
-                <dt class="nhsuk-summary-list__key">
-                  Reporter phone number
-                </dt>
-                <dd class="nhsuk-summary-list__value">
-                  078000078766
-                </dd>
-              </div>
-
-
-              <div class="nhsuk-summary-list__row">
-                <dt class="nhsuk-summary-list__key">
-                  Date and time reported
-                </dt>
-                <dd class="nhsuk-summary-list__value">
-                  12/31/2023, 09:37:07 AM
-                </dd>
-              </div>
-
-
-
-          
-
-
-
-
-
-
-        </dl>
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Fault ID
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          X0000164
+        </dd>
 
       </div>
-    </div>
 
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Trust site
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          Applebee site
+        </dd>
+      </div>
+
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Fault name
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          Faulty door
+        </dd>
+      </div>
+
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Detailed fault description
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          Somebody drove into the door
+        </dd>
+      </div>
+
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Urgency rating
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          <strong class="nhsuk-tag nhsuk-tag--red">
+            EMERGENCY
+          </strong>
+        </dd>
+      </div>
+
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Fault location
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+
+          Room: 2
+
+        </dd>
+      </div>
+
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Possible risk of infection
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          No, there is no risk of infection in the area
+        </dd>
+      </div>
+
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Infection risk description
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          Broken glass and blood everywhere does not sound like a fun party
+        </dd>
+      </div>
+
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Personal Protective Equipment required
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          Gloves and a hazmat suit
+        </dd>
+      </div>
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Can be accessed anytime
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          No, the fault is only available at specific times
+        </dd>
+      </div>
+
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Possible risk of infection
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          Yes, there is a possible risk of infection
+        </dd>
+      </div>
+
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Detailed access description
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          Every day at noon the doctors go on break, but on wednesdays they have wonder wednesdays and they order take
+          out they have all never tried before and so the ffault can be accessed only on wednesday between 2am -4am
+        </dd>
+      </div>
+
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Phone number for access
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          07800005812
+        </dd>
+      </div>
+
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Additional information
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          Well, now that you mention it, I think I read something about glass ticklers and I think this fault being a
+          broken frame could be an opening for them to access the hospital. Please act fast!!!
+        </dd>
+      </div>
+
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Photos uploaded
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          <a target="_blank" href="/helpdesk/v2/crack.jpg">
+            <img src="/helpdesk/v2/crack.jpg" alt="fault-image">
+          </a>
+          <a target="_blank" href="/helpdesk/v2/image.jpg">
+            <img src="/helpdesk/v2/image.jpg" alt="fault-image">
+          </a>
+          <a target="_blank" href="/helpdesk/v2/image2.jpg">
+            <img src="/helpdesk/v2/image2.jpg" alt="fault-image">
+          </a>
+          <a target="_blank" href="/helpdesk/v2/window.jpg">
+            <img src="/helpdesk/v2/window.jpg" alt="fault-image">
+          </a>
+          <a target="_blank" href="/helpdesk/v2/image3.jpg">
+            <img src="/helpdesk/v2/image3.jpg" alt="fault-image">
+          </a>
+        </dd>
+      </div>
+
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Reporter name
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          James Calamari Julio Iglesias Madrid Edward V
+        </dd>
+      </div>
+
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Reporter email
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          jamescalioiglesiasmadrid@nhs.net
+        </dd>
+      </div>
+
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Reporter phone number
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          078000078766
+        </dd>
+      </div>
+
+
+      <div class="nhsuk-summary-list__row">
+        <dt class="nhsuk-summary-list__key">
+          Date and time reported
+        </dt>
+        <dd class="nhsuk-summary-list__value">
+          12/31/2023, 09:37:07 AM
+        </dd>
+      </div>
+
+
+
+
+
+
+
+
+
+
+    </dl>
 
   </div>
+</div>
+
+
+</div>
 </div>
 
 

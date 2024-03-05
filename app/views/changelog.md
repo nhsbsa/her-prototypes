@@ -30,6 +30,12 @@ Where? Helpdes/v2
 
 4 March 2024
 1. Radio buttons in operator dashboard were changed to stack as opposed to side by side
-2. A header was added for "Call the helpdesk" page in the emergency bpart of the report a fault flow
+2. A header was added for "Call the helpdesk" page in the emergency page of the report a fault flow
 3. Added a checkbox for confirmation of closing a fault - removed inset text
 4. Changed warning callout to be h2
+
+5 March 2024
+1. "Call the helpdesk" in the emergency page of the report a fault flow changed to "Is this an emergency?"
+2. Changed "Report summary" on summary pages to H1
+3. Added "Fault updates" as H1 to update table pages for open and closed faults
+4. Changed text area to text input in repoer and pending report pages
