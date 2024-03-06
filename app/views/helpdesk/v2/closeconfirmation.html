@@ -28,7 +28,7 @@ Fault Operator Prototype V2
   <main class="nhsuk-main-wrapper nhsuk-u-padding-bottom-4" id="maincontent" role="main">
     <div class="nhsuk-grid-row">
 
-      <div class="nhsuk-grid-column-full">
+      <div class="nhsuk-grid-column-two-thirds">
         <div class="nhsuk-back-link">
 
           <a class="nhsuk-back-link__link" href="/helpdesk/v2/faultlist">
@@ -43,8 +43,9 @@ Fault Operator Prototype V2
 
 
         </div>
-        <h1 class="nhsuk-heading-xl">Fault updates</h1>
-        <h2 class="nhsuk-heading-l">X0000165 , Broken glass frame</h2>
+        <h1 class="nhsuk-heading-xl">Are you sure you want to close this fault?</h1>
+        <p class="nhsuk-body">Before closing this fault, ensure that the fault has been resolved to the standard set and agreed upon by the
+          Trust</p>
         <!--This is pulled dynamically based on fault ID and fault summary-->
 
       </div>
@@ -145,15 +146,36 @@ Fault Operator Prototype V2
     </div>
     </div>
     </div-->
+    
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-3">
+        <div class="nhsuk-radios">
 
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-1">
+          Yes
+        </label>
+      </div>
 
-    <div class="nhsuk-warning-callout nhsuk-grid-column-two-thirds nhsuk-u-margin-top-2">
+      <div class="nhsuk-radios__item">
+        <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
+        <label class="nhsuk-label nhsuk-radios__label" for="example-2">
+          No
+        </label>
+      </div>
+
+    </div>
+    </div>
+    </div>
+
+    <!--div class="nhsuk-warning-callout nhsuk-grid-column-two-thirds nhsuk-u-margin-top-2">
       <h3 class="nhsuk-warning-callout__label">
         Has this been resolved?<span class="nhsuk-u-visually-hidden">:</span>
       </h3>
       <p>Before closing this fault, ensure that the fault has been resolved to the standard set and agreed upon by the
         Trust</p>
-    </div>
+    </div-->
 
     <!--div class="nhsuk-inset-text">
           <span class="nhsuk-u-visually-hidden">Confirmation before closing: </span>
@@ -161,16 +183,16 @@ Fault Operator Prototype V2
         </div-->
 
     <div class="nhsuk-grid-row">
-      <div class="nhsuk-grid-column-two-thirds">
+      <div class="nhsuk-grid-column-full">
         <div class="nhsuk-grid-column-one-third nhsuk-u-padding-left-1 nhsuk-u-padding-right-1"
           style="display:flexbox; justify-content: space-between;">
-          <a class="nhsuk-button" data-module="nhsuk-button" href="/helpdesk/v2/openupdate" draggable="false" role="button">
-            No, cancel
+          <a class="nhsuk-button" data-module="nhsuk-button" href="/helpdesk/v2/closedfault" draggable="false" role="button">
+            Continue
           </a>
 
-          <a class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" href="/helpdesk/v2/closedfault"
+          <a class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" href="/helpdesk/v2/openupdate"
             draggable="false" role="button">
-            Yes, close fault
+            Cancel
           </a>
 
         </div>
