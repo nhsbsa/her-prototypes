@@ -50,10 +50,12 @@ Fault Operator Prototype V2
       </div>
     </div>
 
-    <div class="nhsuk-grid-row">
+    <!--This is for the table-->
+
+    <!--div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-full">
 
-        <div class="nhsuk-form-group nhsuk-table__head"><!--This is for the table-->
+        <div class="nhsuk-form-group nhsuk-table__head">
           <table role="table" class="nhsuk-table-responsive">
             <caption class="nhsuk-table__caption nhsuk-u-visually-hidden">Fault updates</caption>
             <thead role="rowgroup">
@@ -126,9 +128,9 @@ Fault Operator Prototype V2
           </table>
         </div>
       </div>
-    </div>
+    </div-->
 
-    <div class="nhsuk-grid-row">
+    <!--div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-4">
 
     <div class="nhsuk-checkboxes">
@@ -142,23 +144,33 @@ Fault Operator Prototype V2
       </div>
     </div>
     </div>
+    </div-->
+
+
+    <div class="nhsuk-warning-callout nhsuk-grid-column-two-thirds nhsuk-u-margin-top-2">
+      <h3 class="nhsuk-warning-callout__label">
+        Has this been resolved?<span class="nhsuk-u-visually-hidden">:</span>
+      </h3>
+      <p>Before closing this fault, ensure that the fault has been resolved to the standard set and agreed upon by the
+        Trust</p>
     </div>
 
     <!--div class="nhsuk-inset-text">
           <span class="nhsuk-u-visually-hidden">Confirmation before closing: </span>
           <p>Do not close a fault unless you have confirmed that it has been resolved. </p>
         </div-->
+
     <div class="nhsuk-grid-row">
-      <div class="nhsuk-grid-column-full">
+      <div class="nhsuk-grid-column-two-thirds">
         <div class="nhsuk-grid-column-one-third nhsuk-u-padding-left-1 nhsuk-u-padding-right-1"
           style="display:flexbox; justify-content: space-between;">
-          <a class="nhsuk-button" data-module="nhsuk-button" href="/helpdesk/v2/report" draggable="false" role="button">
-            Update fault
+          <a class="nhsuk-button" data-module="nhsuk-button" href="/helpdesk/v2/openupdate" draggable="false" role="button">
+            No, cancel
           </a>
 
           <a class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" href="/helpdesk/v2/closedfault"
             draggable="false" role="button">
-            Close fault
+            Yes, close fault
           </a>
 
         </div>

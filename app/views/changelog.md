@@ -39,3 +39,6 @@ Where? Helpdes/v2
 2. Changed "Report summary" on summary pages to H1
 3. Added "Fault updates" as H1 to update table pages for open and closed faults
 4. Changed text area to text input in repoer and pending report pages
+
+6 March 2024
+1. Updated confirmation screen for closing a fault
