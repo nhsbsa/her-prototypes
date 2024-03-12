@@ -34,23 +34,26 @@
 
 {% block content %}
         <div class="nhsuk-grid-row">
-            <div class="nhsuk-grid-column-full">
-        <h1 class="nhsuk-heading-xl">Welcome to the helpdesk</h1>
-        <p class="nhsuk-body">This tool is for setting up, editing, or disabling a hospital trust from the NHS Report a Fault Service.</p>
-        <p class="nhsuk-body">You will need the following information (usually provided by email) from the FM Manager of the trust:</p>
+            <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-heading-xl">Trust administrator dashboard </h1>
+        <p class="nhsuk-body">Set up, edit or disable a hospital trust from the NHS Report a Fault service.</p>
+
+        <h2>Before you start adding a trust</h2>
+        <p class="nhsuk-body">You will need:</p>
+     
 
         <ul class="nhsuk-list nhsuk-list--bullet">
-  <li>Name of the Trust</li>
-  <li>The domains to be included in the whitelist for authenticating users</li>
-  <li>The email address(es) for helpdesk or helpdesk operators</li>
-  <li>The phone number (and extension) of the helpdesk for the trust</li>
-  <li>Specifics of how you identify the location of a fault - eg PFI number, room number etc.</li>
-  <li>Email address for your Facilities Manager</li>
+  <li>the trust name</li>
+  <li>the email domains that will be allowed to report faults</li>
+  <li>email addresses for trust staff who will access the dashboard</li>
+  <li>the phone number and extension for the trust helpdesk</li>
+  <li>details of how fault locations will be entered at the trust</li>
+  <li>an email contact for the facilities management company responsible for the trust</li>
         </ul>
  
       <!-- Add your content here -->
     
-      <a href="/admin/v1/signin"><button class="nhsuk-button" data-module="nhsuk-button"
+      <a href="/admin/v2/signin"><button class="nhsuk-button" data-module="nhsuk-button"
         type="button">Start
     </button>
   </a>
