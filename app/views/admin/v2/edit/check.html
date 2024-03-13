@@ -1,0 +1,228 @@
+{% extends 'layout-admin.html' %}
+
+{% block pageTitle %}
+Trust Administrator Prototype v2
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<div class="app-phase-banner  nhsuk-u-padding-top-1 nhsuk-u-padding-bottom-1">
+    <div class="nhsuk-width-container app-phase-banner__container">
+        <p class="nhsuk-body-s app-phase-banner__content nhsuk-u-margin-bottom-1">
+            <strong class="nhsuk-tag app-phase-banner__tag">
+                PROTOTYPE
+            </strong>
+            <span class="app-phase-banner__text">
+                This is a prototype - your <a href="#">feedback</a> will help us improve it.
+            </span>
+        </p>
+        <hr
+            class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1">
+    </div>
+</div>
+{% endblock %}
+
+
+{% block outerContent %}
+<div class="nhsuk-back-link">
+
+    <a class="nhsuk-back-link__link" href="../edit/trust1">
+        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            aria-hidden="true" height="24" width="24">
+            <path
+                d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+            </path>
+        </svg>
+        Go back</a>
+</div>
+{% endblock %}
+<!--javascript:history.back()-->
+
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-u-margin-bottom-3"><span class="nhsuk-caption-l">Edit trust</span>Check your changes</h1>
+
+
+        <div><!--Summary table-->
+            <dl class="nhsuk-summary-list">
+
+                <div class="nhsuk-summary-list__row">
+                  <dt class="nhsuk-summary-list__key">
+                    Trust name and sites
+                  </dt>
+                  <dd class="nhsuk-summary-list__value">
+                    <p>Queen Elizabeth's Magnificent Treatment Clinic</p>
+                    <br>
+                    <p>Stella site</p>
+                    <p>Abercrombie and Davidson site</p>
+                  </dd>
+              
+                  <dd class="nhsuk-summary-list__actions">
+              
+                    <a href="../edit/trustname">
+                      Change<span class="nhsuk-u-visually-hidden"> trust name or trust site</span>
+                    </a>
+              
+                  </dd>
+              
+                </div>
+
+
+                <div class="nhsuk-summary-list__row">
+                    <dt class="nhsuk-summary-list__key">
+                      Who will access the trust dashboard?
+                    </dt>
+                    <dd class="nhsuk-summary-list__value">
+                      johnhamesonfergusonreomiro@nhs.net
+                    </dd>
+                
+                    <dd class="nhsuk-summary-list__actions">
+                
+                      <a href="../edit/operator">
+                        Change<span class="nhsuk-u-visually-hidden"> who will access the trust dashboard?</span>
+                      </a>
+                
+                    </dd>
+                
+                  </div>
+
+                  <div class="nhsuk-summary-list__row">
+                    <dt class="nhsuk-summary-list__key">
+                      Who can report faults?
+                    </dt>
+                    <dd class="nhsuk-summary-list__value">
+                      <p>dhsc.com</p>
+                      <p>nhs.net</p>
+                    </dd>
+                
+                    <dd class="nhsuk-summary-list__actions">
+                
+                      <a href="../edit/domains">
+                        Change<span class="nhsuk-u-visually-hidden"> who can report faults?</span>
+                      </a>
+                
+                    </dd>
+                
+                  </div>
+
+                  <div class="nhsuk-summary-list__row">
+                    <dt class="nhsuk-summary-list__key">Which trust staff will get notifications of reports?
+                    </dt>
+                    <dd class="nhsuk-summary-list__value">
+                      jmackrohan@nhs.net
+                    </dd>
+                
+                    <dd class="nhsuk-summary-list__actions">
+                
+                      <a href="../edit/faultnotification">
+                        Change<span class="nhsuk-u-visually-hidden"> which trust staff will get notifications of reports?</span>
+                      </a>
+                
+                    </dd>
+                
+                  </div>
+
+                  <div class="nhsuk-summary-list__row">
+                    <dt class="nhsuk-summary-list__key">
+                        Which trust staff will get weekly or monthly summary reports?
+                    </dt>
+                    <dd class="nhsuk-summary-list__value">
+                      nathanielrogers@bristol.nhs.net
+                    </dd>
+                
+                    <dd class="nhsuk-summary-list__actions">
+                
+                      <a href="../edit/summaryrcpt">
+                        Change<span class="nhsuk-u-visually-hidden"> which trust staff will get weekly or monthly summary reports?</span>
+                      </a>
+                
+                    </dd>
+                
+                  </div>
+
+                  <div class="nhsuk-summary-list__row">
+                    <dt class="nhsuk-summary-list__key">
+                        Facility management company contact details
+                    </dt>
+                    <dd class="nhsuk-summary-list__value">
+                      kierstonkimberly@cerco.org
+                    </dd>
+                
+                    <dd class="nhsuk-summary-list__actions">
+                
+                      <a href="../edit/fmco">
+                        Change<span class="nhsuk-u-visually-hidden"> facility management company contact details</span>
+                      </a>
+                
+                    </dd>
+                
+                  </div>
+
+                  <div class="nhsuk-summary-list__row">
+                    <dt class="nhsuk-summary-list__key">
+                        Helpdesk phone and extension
+                    </dt>
+                    <dd class="nhsuk-summary-list__value">
+                      <p>+4456789876</p>
+                      <p>76788</p>
+                    </dd>
+                
+                    <dd class="nhsuk-summary-list__actions">
+                
+                      <a href="../edit/phone">
+                        Change<span class="nhsuk-u-visually-hidden"> helpdesk phone number or extenstion</span>
+                      </a>
+                
+                    </dd>
+                
+                  </div>
+
+                  <div class="nhsuk-summary-list__row">
+                    <dt class="nhsuk-summary-list__key">
+                        Location details
+                    </dt>
+                    <dd class="nhsuk-summary-list__value">
+                      <p>
+                        PFI number
+                      </p>
+                      <p>
+                        Building
+                      </p>
+                      <p>
+                        Wing
+                      </p>
+                      <p>
+                        Floor
+                      </p>
+                    </dd>
+                
+                    <dd class="nhsuk-summary-list__actions">
+                
+                      <a href="../edit/location">
+                        Change<span class="nhsuk-u-visually-hidden"> location details</span>
+                      </a>
+                
+                    </dd>
+                
+                  </div>
+                
+              
+
+              </dl>
+
+        </div>
+
+        <a href="/admin/v2/edit/trust1"><button class="nhsuk-button" data-module="nhsuk-button" type="submit">Confirm changes
+            </button>
+        </a>
+
+    </div>
+</div>
+
+
+{% endblock %}

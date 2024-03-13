@@ -27,7 +27,7 @@ Trust Administrator Prototype v2
 {% block outerContent %}
 <div class="nhsuk-back-link">
 
-    <a class="nhsuk-back-link__link" href="/admin/v2/add/fmco">
+    <a class="nhsuk-back-link__link" href="/admin/v2/add/faultnotification">
         <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
             aria-hidden="true" height="24" width="24">
             <path
@@ -45,57 +45,30 @@ Trust Administrator Prototype v2
 
 <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
-        <h1 class="nhsuk-u-margin-bottom-3"><span class="nhsuk-caption-l">Add a trust</span>Helpdesk phone number</h1>
-        <p class="nhsuk-body">Enter the helpdesk phone number for trust staff to report dangerous faults by phone.</p>
+        <h1 class="nhsuk-u-margin-bottom-3"><span class="nhsuk-caption-l">Add a trust</span>Which trust staff will get weekly or monthly summary reports? </h1>
+        <p class="nhsuk-body">Enter email addresses for trust staff who will get weekly or monthly reports of the faults reported at the trust. For example, the trust helpdesk manager.</p>
 
         <div><!--Input fields-->
-
-          <div class="nhsuk-form-group"><!--Default NHS-->
-            <label class="nhsuk-label" for="example">
-              Phone number
-            </label>
-            <div class="nhsuk-input__wrapper">
-          
-              <div class="nhsuk-input__prefix" aria-hidden="true">+44</div>
-          
-              <input class="nhsuk-input nhsuk-input--width-10" id="example" name="example" type="text">
-            </div>
-          
-          </div>
-
-              <div class="nhsuk-form-group"><!--Modified GOV-->
-                
-                  <label class="nhsuk-label" for="cost">
-                    Phone number
-                  </label>
-                
-                <div class="govuk-input__wrapper">
-                  <div class="govuk-input__prefix" aria-hidden="true">+44</div>
-                  <input class="nhsuk-input nhsuk-input--width-10" id="cost" name="cost" type="text" spellcheck="false">
-                </div>
-              </div>
-
-
+            <!--div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="three-quarters">
+                    Name of trust
+                </label>
+                <input class="nhsuk-input nhsuk-u-width-three-quarters" id="three-quarters" name="three-quarters"
+                    type="text">
+            </div-->
 
             <div class="nhsuk-form-group">
-                <label class="nhsuk-label" for="input-width-5">
-                  Extension
-                </label>
-                <input class="nhsuk-input nhsuk-input--width-5" id="input-width-5" name="test-width-5" type="text">
-              </div>
-
-            <!--div class="nhsuk-form-group">
                 <label class="nhsuk-label" for="example-longer">
                     Email addresses
                 </label>
-                div class="nhsuk-hint" id="example-longer-hint">
+                <div class="nhsuk-hint" id="example-longer-hint">
                     Add one address per line or separate the addresses with a comma.
-                </div
+                </div>
                 <textarea class="nhsuk-textarea nhsuk-u-width-three-quarters" id="example-longer" name="example-longer" rows="6"
                     aria-describedby="example-longer-hint"></textarea>
-            </div-->
+            </div>
         </div>
-        <a href="/admin/v2/add/location"><button class="nhsuk-button" data-module="nhsuk-button" type="submit">Continue
+        <a href="/admin/v2/add/fmco"><button class="nhsuk-button" data-module="nhsuk-button" type="submit">Continue
             </button>
         </a>
 
