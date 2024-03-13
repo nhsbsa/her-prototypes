@@ -8,4 +8,7 @@ const router = express.Router();
 
 router.use('/frontend', require('./views/frontend/_routes.js'))
 
+
+router.use('/helpdesk', require('./views/helpdesk/_routes.js'))
+
 module.exports = router;

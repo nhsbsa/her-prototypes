@@ -43,9 +43,8 @@ Fault Operator Prototype V2
 
 
         </div>
-        <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-2">Are you sure you want to close this fault?</h1>
-        <p class="nhsuk-body">Before closing this fault, ensure that the fault has been resolved to the standard set and agreed upon by the
-          Trust</p>
+        <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-2">Has the fault been resolved?</h1>
+        <p class="nhsuk-body">Do not close the fault unless you have confirmed that it has been resolved</p>
         <!--This is pulled dynamically based on fault ID and fault summary-->
 
       </div>
@@ -146,30 +145,43 @@ Fault Operator Prototype V2
     </div>
     </div>
     </div-->
-    
+
     <div class="nhsuk-grid-row">
       <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-3">
-        <div class="nhsuk-radios">
 
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-1" name="example" type="radio" value="yes">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-1">
-          Yes
-        </label>
+        <form action="/helpdesk/v2/closeconfirmation" method="post">
+
+          <div class="nhsuk-form-group">
+
+            <div class="nhsuk-radios" id="close-confirmation">
+
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input"  name="close-confirmation" type="radio" value="yes">
+                <label class="nhsuk-label nhsuk-radios__label" for="yes">
+                  Yes
+                </label>
+              </div>
+
+              <div class="nhsuk-radios__item">
+                <input class="nhsuk-radios__input" name="close-confirmation" type="radio" value="no">
+                <label class="nhsuk-label nhsuk-radios__label" for="no">
+                  No
+                </label>
+              </div>
+
+            </div>
+
+            <button class="nhsuk-button nhsuk-u-margin-top-4" data-module="nhsuk-button" type="submit">
+              Continue
+            </button>
+          
+          </div>
+        </form>
       </div>
-
-      <div class="nhsuk-radios__item">
-        <input class="nhsuk-radios__input" id="example-2" name="example" type="radio" value="no">
-        <label class="nhsuk-label nhsuk-radios__label" for="example-2">
-          No
-        </label>
-      </div>
-
     </div>
-    </div>
-    </div>
+</div>
 
-    <!--div class="nhsuk-warning-callout nhsuk-grid-column-two-thirds nhsuk-u-margin-top-2">
+<!--div class="nhsuk-warning-callout nhsuk-grid-column-two-thirds nhsuk-u-margin-top-2">
       <h3 class="nhsuk-warning-callout__label">
         Has this been resolved?<span class="nhsuk-u-visually-hidden">:</span>
       </h3>
@@ -177,31 +189,12 @@ Fault Operator Prototype V2
         Trust</p>
     </div-->
 
-    <!--div class="nhsuk-inset-text">
+<!--div class="nhsuk-inset-text">
           <span class="nhsuk-u-visually-hidden">Confirmation before closing: </span>
           <p>Do not close a fault unless you have confirmed that it has been resolved. </p>
         </div-->
 
-    <div class="nhsuk-grid-row">
-      <div class="nhsuk-grid-column-full">
-        <div class="nhsuk-grid-column-one-third nhsuk-u-padding-left-1 nhsuk-u-padding-right-1"
-          style="display:flexbox; justify-content: space-between;">
-          <a class="nhsuk-button" data-module="nhsuk-button" href="/helpdesk/v2/closedfault" draggable="false" role="button">
-            Continue
-          </a>
-
-          <a class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" href="/helpdesk/v2/openupdate"
-            draggable="false" role="button">
-            Cancel
-          </a>
-
-        </div>
-
-
-      </div>
-
-    </div>
-  </main>
+</main>
 </div>
 <!--Close of grid column-->
 

@@ -42,3 +42,7 @@ Where? Helpdes/v2
 
 6 March 2024
 1. Updated confirmation screen for closing a fault
+
+14 March 2024
+1. Updated frontend toolkit to v8.1.0
+2. Completed v2 administrator flow in it's entirety
