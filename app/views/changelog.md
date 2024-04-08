@@ -48,11 +48,11 @@ Where? Helpdes/v2
 2. Completed v2 administrator flow in it's entirety
 
 8 April 2024
-1. Made copy to the following pages
+1. Made copy changes to the following pages
     Request Submitted page.
     Password changed success screen.
     Report Summary screens.
-2. Note: The changes related to ‘Trust site’ needs to be updated(needs to remove) in prototype.
+2. Pages containing ‘Trust site’ information were removed in prototype.
      Trust site filter in fault list.
      Site name in fault listing table.
      On Report Summary page under pending status.
