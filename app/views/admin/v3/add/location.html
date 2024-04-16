@@ -1,0 +1,219 @@
+{% extends 'layout-admin.html' %}
+
+{% block pageTitle %}
+Trust Administrator Prototype v2
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<div class="app-phase-banner  nhsuk-u-padding-top-1 nhsuk-u-padding-bottom-1">
+    <div class="nhsuk-width-container app-phase-banner__container">
+        <p class="nhsuk-body-s app-phase-banner__content nhsuk-u-margin-bottom-1">
+            <strong class="nhsuk-tag app-phase-banner__tag">
+                PROTOTYPE
+            </strong>
+            <span class="app-phase-banner__text">
+                This is a prototype - your <a href="#">feedback</a> will help us improve it.
+            </span>
+        </p>
+        <hr
+            class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1">
+    </div>
+</div>
+{% endblock %}
+
+
+{% block outerContent %}
+<div class="nhsuk-back-link">
+
+    <a class="nhsuk-back-link__link" href="/admin/v3/add/phone">
+        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            aria-hidden="true" height="24" width="24">
+            <path
+                d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+            </path>
+        </svg>
+        Go back</a>
+</div>
+{% endblock %}
+<!--javascript:history.back()-->
+
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+        <h1 class="nhsuk-u-margin-bottom-3"><span class="nhsuk-caption-l">Add a trust</span>Options for reporting fault
+            locations</h1>
+        <p class="nhsuk-body">Label the fields that trust staff will use to report fault locations.</p>
+
+        <p class="nhsuk-body">Some trusts only need one location field, for example a room number. Others need to give
+            more location details.</p>
+
+        <div><!--Input fields-->
+            <br>
+            <div>
+                <div class="nhsuk-form-group">
+                    <label class="nhsuk-label" for="location_label">
+                        Required location field label
+                    </label>
+                    <div class="nhsuk-hint" id="example-with-hint-text-hint">
+                        All trusts must have at least one location field.
+                    </div>
+                    <input class="nhsuk-input nhsuk-u-width-one-half" id="one-half" name="one-half" type="text">
+                </div>
+            </div>
+
+            <div>
+
+                <form>
+
+                    <div class="nhsuk-form-group">
+
+                        <fieldset class="nhsuk-fieldset" aria-describedby="contact-hint">
+
+                            <div class="nhsuk-checkboxes nhsuk-checkboxes--conditional">
+
+                                <div class="nhsuk-checkboxes__item">
+                                    <input class="nhsuk-checkboxes__input" id="contact-1" name="contact" type="checkbox"
+                                        value="email" aria-controls="conditional-contact-1" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-1">
+                                        Additional location field 1
+                                    </label>
+                                </div>
+
+                                <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden"
+                                    id="conditional-contact-1">
+
+                                    <div class="nhsuk-form-group">
+                                        <label class="nhsuk-label" for="email">
+                                            Label
+                                        </label>
+                                        <input class="nhsuk-input nhsuk-u-width-two-thirds" id="email" name="email"
+                                            type="text">
+
+                                        <div class="nhsuk-checkboxes__item nhsuk-u-margin-top-4">
+                                            <input class="nhsuk-checkboxes__input" id="contact" name="contact"
+                                                type="checkbox" value="email">
+                                            <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+                                                Required
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="nhsuk-checkboxes__item">
+                                    <input class="nhsuk-checkboxes__input" id="contact-2" name="contact" type="checkbox"
+                                        value="phone" aria-controls="conditional-contact-2" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                        Additional location field 2
+                                    </label>
+                                </div>
+
+                                <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden"
+                                    id="conditional-contact-2">
+
+                                    <div class="nhsuk-form-group">
+                                        <label class="nhsuk-label" for="phone">
+                                            Label
+                                        </label>
+                                        <input class="nhsuk-input nhsuk-u-width-two-thirds" id="phone" name="phone"
+                                            type="text">
+                                        <div class="nhsuk-checkboxes__item nhsuk-u-margin-top-4">
+                                            <input class="nhsuk-checkboxes__input" id="contact" name="contact"
+                                                type="checkbox" value="email">
+                                            <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+                                                Required
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="nhsuk-checkboxes__item">
+                                    <input class="nhsuk-checkboxes__input" id="contact-3" name="contact" type="checkbox"
+                                        value="email" aria-controls="conditional-contact-3" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-3">
+                                        Additional location field 3
+                                    </label>
+                                </div>
+
+                                <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden"
+                                    id="conditional-contact-3">
+
+                                    <div class="nhsuk-form-group">
+                                        <label class="nhsuk-label" for="email">
+                                            Label
+                                        </label>
+                                        <input class="nhsuk-input nhsuk-u-width-two-thirds" id="email" name="email"
+                                            type="text">
+
+                                        <div class="nhsuk-checkboxes__item nhsuk-u-margin-top-4">
+                                            <input class="nhsuk-checkboxes__input" id="contact" name="contact"
+                                                type="checkbox" value="email">
+                                            <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+                                                Required
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="nhsuk-checkboxes__item">
+                                    <input class="nhsuk-checkboxes__input" id="contact-4" name="contact" type="checkbox"
+                                        value="phone" aria-controls="conditional-contact-4" aria-expanded="false">
+                                    <label class="nhsuk-label nhsuk-checkboxes__label" for="contact-2">
+                                        Additional location field 4
+                                    </label>
+                                </div>
+
+                                <div class="nhsuk-checkboxes__conditional nhsuk-checkboxes__conditional--hidden"
+                                    id="conditional-contact-4">
+
+                                    <div class="nhsuk-form-group">
+                                        <label class="nhsuk-label" for="phone">
+                                            Label
+                                        </label>
+                                        <input class="nhsuk-input nhsuk-u-width-two-thirds" id="phone" name="phone"
+                                            type="text">
+                                        <div class="nhsuk-checkboxes__item nhsuk-u-margin-top-4">
+                                            <input class="nhsuk-checkboxes__input" id="contact" name="contact"
+                                                type="checkbox" value="email">
+                                            <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+                                                Required
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                    </div>
+                </form>
+            </div>
+
+            <!--div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="example-longer">
+                    Email addresses
+                </label>
+                div class="nhsuk-hint" id="example-longer-hint">
+                    Add one address per line or separate the addresses with a comma.
+                </div
+                <textarea class="nhsuk-textarea nhsuk-u-width-three-quarters" id="example-longer" name="example-longer" rows="6"
+                    aria-describedby="example-longer-hint"></textarea>
+            </div-->
+        </div>
+
+        <a href="/admin/v3/add/check"><button class="nhsuk-button" data-module="nhsuk-button" type="submit">Continue
+            </button>
+        </a>
+
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,96 @@
+{% extends 'layout-admin.html' %}
+
+{% block pageTitle %}
+Trust Administrator Prototype v2
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<div class="app-phase-banner  nhsuk-u-padding-top-1 nhsuk-u-padding-bottom-1">
+  <div class="nhsuk-width-container app-phase-banner__container">
+    <p class="nhsuk-body-s app-phase-banner__content nhsuk-u-margin-bottom-1">
+      <strong class="nhsuk-tag app-phase-banner__tag">
+        PROTOTYPE
+      </strong>
+      <span class="app-phase-banner__text">
+        This is a prototype - your <a href="#">feedback</a> will help us improve it.
+      </span>
+    </p>
+    <hr
+      class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1">
+  </div>
+</div>
+{% endblock %}
+
+
+{% block outerContent %}
+<div class="nhsuk-back-link">
+
+  <a class="nhsuk-back-link__link" href="/admin/v3/add/location">
+    <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+      aria-hidden="true" height="24" width="24">
+      <path
+        d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+      </path>
+    </svg>
+    Go back</a>
+</div>
+{% endblock %}
+<!--javascript:history.back()-->
+
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+
+
+    <h1>
+      Her Majesty's  trust of blessed souls deactivated
+    </h1>
+
+    <p>You have deactivated <!--Traust name is pulled automatically--> Her Majesty's trust of Blessed souls from the Reporta fault service.</p>
+    
+
+    <h2>
+      What happens next
+    </h2>
+
+    <p class="nhsuk-body">
+      All sites linked to this trust account will lose access to the Report a fault service immediately.
+    </p>
+
+<h2>
+  Reactivate trust
+</h2>
+
+<p>
+  You can reactivate this trust in the trust record (link to review trust details screen).
+</p>
+
+
+
+
+<div class="nhsuk-grid-column-two-thirds nhsuk-u-padding-left-0">
+  <div class="nhsuk-u-margin-bottom-3"><p>You can <a class="nhsuk-link nhsuk-link--no-visited-state " href="/admin/v3/edit/trust2">
+    reactivate this trust in the trust record.
+  </a></p>
+  </div>
+
+  <a class="nhsuk-button" data-module="nhsuk-button" href="/admin/v3/trusts"
+    draggable="false" role="button">
+    Find another trust
+  </a>
+</div>
+
+
+
+
+
+
+  </div>
+</div>
+{% endblock %}
