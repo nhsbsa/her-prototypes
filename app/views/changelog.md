@@ -56,3 +56,12 @@ Where? Helpdes/v2
      Trust site filter in fault list.
      Site name in fault listing table.
      On Report Summary page under pending status.
+
+
+16 April 2024
+1. Confirmation screens for creating, updating, deactivating and reactivating a trust
+2. Removed the option to choose summary report frequency
+3. Removed Trust site across all pages
+4. Included the trust reporting link on the details page
+5. Updating flow for "check your answers" when creating a fault
+6. Creation of v3 of administrator journey
