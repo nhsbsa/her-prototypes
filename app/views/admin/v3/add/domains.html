@@ -24,7 +24,11 @@ Trust Administrator Prototype v2
 {% endblock %}
 
 
-{% block outerContent %}
+
+<!--javascript:history.back()-->
+
+
+{% block content %}
 <div class="nhsuk-back-link">
 
     <a class="nhsuk-back-link__link" href="/admin/v3/add/operator">
@@ -36,12 +40,6 @@ Trust Administrator Prototype v2
         </svg>
         Go back</a>
 </div>
-{% endblock %}
-<!--javascript:history.back()-->
-
-
-{% block content %}
-
 
 <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
@@ -68,7 +66,7 @@ Trust Administrator Prototype v2
                     aria-describedby="example-longer-hint"></textarea>
             </div>
         </div>
-        <a href="/admin/v3/add/faultnotification"><button class="nhsuk-button" data-module="nhsuk-button" type="submit">Continue
+        <a href="/admin/v3/add/summaryrcpt"><button class="nhsuk-button" data-module="nhsuk-button" type="submit">Continue
             </button>
         </a>
 

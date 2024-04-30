@@ -65,3 +65,10 @@ Where? Helpdes/v2
 4. Included the trust reporting link on the details page
 5. Updating flow for "check your answers" when creating a fault
 6. Creation of v3 of administrator journey
+
+
+30 April 2024
+1. Updated the administrator flow to merge "operator" and "fault notification" pages to become "Who will access the trust dashboard and get notifications of reports?"
+2. Updated routing for helpdesk v3
+3. Updated "go back" link position on all screens 
+4. Removed "go back" button from confirmation pages

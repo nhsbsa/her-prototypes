@@ -24,7 +24,10 @@ Trust Administrator Prototype v2
 {% endblock %}
 
 
-{% block outerContent %}
+<!--javascript:history.back()-->
+
+
+{% block content %}
 <div class="nhsuk-back-link">
 
   <a class="nhsuk-back-link__link" href="../trusts">
@@ -36,12 +39,6 @@ Trust Administrator Prototype v2
     </svg>
     Back to trust list</a>
 </div>
-{% endblock %}
-<!--javascript:history.back()-->
-
-
-{% block content %}
-
 
 <div class="nhsuk-grid-row">
   <div class="nhsuk-grid-column-two-thirds">
@@ -77,7 +74,7 @@ Trust Administrator Prototype v2
 
         <div class="nhsuk-summary-list__row">
           <dt class="nhsuk-summary-list__key">
-            Who will access the trust dashboard?
+            Who will access the trust dashboard and get notifications of reports?
           </dt>
           <dd class="nhsuk-summary-list__value">
             johnhamesonfergusonreomiro@nhs.net
@@ -86,7 +83,7 @@ Trust Administrator Prototype v2
           <dd class="nhsuk-summary-list__actions">
 
             <a href="../edit/operator">
-              Change<span class="nhsuk-u-visually-hidden"> who will access the trust dashboard?</span>
+              Change<span class="nhsuk-u-visually-hidden"> who will access the trust dashboard and get notifications of reports?</span>
             </a>
 
           </dd>
@@ -112,23 +109,7 @@ Trust Administrator Prototype v2
 
         </div>
 
-        <div class="nhsuk-summary-list__row">
-          <dt class="nhsuk-summary-list__key">Which trust staff will get notifications of reported faults?
-          </dt>
-          <dd class="nhsuk-summary-list__value">
-            jmackrohan@nhs.net
-          </dd>
 
-          <dd class="nhsuk-summary-list__actions">
-
-            <a href="../edit/faultnotification">
-              Change<span class="nhsuk-u-visually-hidden"> which trust staff will get notifications of reported
-                faults?</span>
-            </a>
-
-          </dd>
-
-        </div>
 
         <div class="nhsuk-summary-list__row">
           <dt class="nhsuk-summary-list__key">

@@ -24,24 +24,22 @@ Trust Administrator Prototype v2
 {% endblock %}
 
 
-{% block outerContent %}
-<div class="nhsuk-back-link">
 
-    <a class="nhsuk-back-link__link" href="/admin/v3/add/location">
-        <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-            aria-hidden="true" height="24" width="24">
-            <path
-                d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
-            </path>
-        </svg>
-        Go back</a>
-</div>
-{% endblock %}
 <!--javascript:history.back()-->
 
 
 {% block content %}
+<div class="nhsuk-back-link">
 
+  <a class="nhsuk-back-link__link" href="/admin/v3/add/location">
+      <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+          aria-hidden="true" height="24" width="24">
+          <path
+              d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+          </path>
+      </svg>
+      Go back</a>
+</div>
 
 <div class="nhsuk-grid-row">
     <div class="nhsuk-grid-column-two-thirds">
@@ -73,7 +71,7 @@ Trust Administrator Prototype v2
 
                 <div class="nhsuk-summary-list__row">
                     <dt class="nhsuk-summary-list__key">
-                      Who will access the trust dashboard?
+                      Who will access the trust dashboard and get notifications of reports
                     </dt>
                     <dd class="nhsuk-summary-list__value">
                       johnhamesonfergusonreomiro@nhs.net
@@ -82,7 +80,7 @@ Trust Administrator Prototype v2
                     <dd class="nhsuk-summary-list__actions">
                 
                       <a href="../add/changeoperator">
-                        Change<span class="nhsuk-u-visually-hidden"> who will access the trust dashboard?</span>
+                        Change<span class="nhsuk-u-visually-hidden"> who will access the trust dashboard and get notifications of reports?</span>
                       </a>
                 
                     </dd>
@@ -108,22 +106,7 @@ Trust Administrator Prototype v2
                 
                   </div>
 
-                  <div class="nhsuk-summary-list__row">
-                    <dt class="nhsuk-summary-list__key">Which trust staff will get notifications of reported faults?
-                    </dt>
-                    <dd class="nhsuk-summary-list__value">
-                      jmackrohan@nhs.net
-                    </dd>
-                
-                    <dd class="nhsuk-summary-list__actions">
-                
-                      <a href="../add/changefaultnotification">
-                        Change<span class="nhsuk-u-visually-hidden"> which trust staff will get notifications of reported faults?</span>
-                      </a>
-                
-                    </dd>
-                
-                  </div>
+
 
                   <div class="nhsuk-summary-list__row">
                     <dt class="nhsuk-summary-list__key">
