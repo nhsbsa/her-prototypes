@@ -70,5 +70,5 @@ Where? Helpdes/v2
 30 April 2024
 1. Updated the administrator flow to merge "operator" and "fault notification" pages to become "Who will access the trust dashboard and get notifications of reports?"
 2. Updated routing for helpdesk v3
-3. Updated "go back" link position on all screens 
-4. Removed "go back" button from confirmation pages
+3. Updated "go back" link position on all administrator screens 
+4. Removed "go back" button from administrator confirmation pages
