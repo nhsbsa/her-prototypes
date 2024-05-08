@@ -1,0 +1,223 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Report a Fault Prototype v4
+{% endblock %}
+
+
+
+{% block beforeContent %} 
+<div class="app-phase-banner  nhsuk-u-padding-top-1 nhsuk-u-padding-bottom-1">
+    <div class="nhsuk-width-container app-phase-banner__container">
+      <p class="nhsuk-body-s app-phase-banner__content nhsuk-u-margin-bottom-1">
+        <strong class="nhsuk-tag app-phase-banner__tag">
+          PROTOTYPE
+        </strong>
+        <span class="app-phase-banner__text">
+        This is a prototype - your feedback will help us improve it.
+        </span>
+      </p>
+      <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1">
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-full">
+        <div class="nhsuk-back-link">
+
+            <a class="nhsuk-back-link__link" href="/frontend/v4/identity">
+              <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                aria-hidden="true" height="24" width="24">
+                <path
+                  d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+                </path>
+              </svg>
+              Go back</a>
+          </div>
+
+        <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-2">Check report details</h1>
+
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-full">
+            <p class="nhsuk-body">Check the details of your report before you submit it.</p>
+            </div>
+        </div>
+    
+        <div class="nhsuk-grid-row">
+    
+          <div class="nhsuk-grid-column-two-thirds">
+    
+            <dl class="nhsuk-summary-list">
+    
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Your contact details
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  Jane Foster
+                  <br>
+                  jane@nhs.net
+                  <br>
+                  73213 98763
+                </dd>
+                <dd class="nhsuk-summary-list__actions">
+
+                  <a href="/frontend/v4/changeidentity">
+                    Change<span class="nhsuk-u-visually-hidden"> your contact details</span>
+                  </a>
+            
+                </dd>
+    
+              </div>
+    
+    
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Where is the fault?
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  Location title: User response 
+                  <br>
+                  Wing (optional): D7
+                  <br>
+                  Ward (optional): Antenatal
+                  <br>
+                  More details(optional): The corner near the cribs
+
+                </dd>
+                <dd class="nhsuk-summary-list__actions">
+
+                  <a href="/frontend/v4/changewherefault">
+                    Change<span class="nhsuk-u-visually-hidden"> where the fault is</span>
+                  </a>
+            
+                </dd>
+    
+              </div>
+    
+    
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  What kind of fault is it?
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  Broken pipes
+                  <br>
+                  the pipe is leaking water unto the electric socket by the cribs
+                </dd>
+
+                <dd class="nhsuk-summary-list__actions">
+
+                  <a href="/frontend/v4/changefaultkind">
+                    Change<span class="nhsuk-u-visually-hidden"> what kind of fault it is</span>
+                  </a>
+            
+                </dd>
+    
+              </div>
+    
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  How urgent is the fault?
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  <strong class="nhsuk-tag nhsuk-tag--orange">
+                    URGENT
+                  </strong>
+                </dd>
+                <dd class="nhsuk-summary-list__actions">
+
+                  <a href="/frontend/v4/changepriority">
+                    Change<span class="nhsuk-u-visually-hidden"> how urgent the fault is</span>
+                  </a>
+            
+                </dd>
+    
+              </div>
+
+                  
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Uploaded photos
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  <a target="_blank" href="/helpdesk/v3/crack.jpg">
+                    <img src="/helpdesk/v3/crack.jpg" alt="fault-image">
+                  </a>
+                  <a target="_blank" href="/helpdesk/v3/image.jpg">
+                    <img src="/helpdesk/v3/image.jpg" alt="fault-image">
+                  </a>
+                  <a target="_blank" href="/helpdesk/v3/image2.jpg">
+                    <img src="/helpdesk/v3/image2.jpg" alt="fault-image">
+                  </a>
+                  <a target="_blank" href="/helpdesk/v3/window.jpg">
+                    <img src="/helpdesk/v3/window.jpg" alt="fault-image">
+                  </a>
+                  <a target="_blank" href="/helpdesk/v3/image3.jpg">
+                    <img src="/helpdesk/v3/image3.jpg" alt="fault-image">
+                  </a>
+                </dd>
+                <dd class="nhsuk-summary-list__actions">
+
+                  <a href="/frontend/v4/changelowurgency">
+                    Change<span class="nhsuk-u-visually-hidden"> uploaded photos</span>
+                  </a>
+            
+                </dd>
+    
+              </div>
+    
+
+    
+    
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Additional information
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                   Is there a risk of infection: Yes 
+                    <br>
+                    Needed PPE: Longwinded explanation of hazmat suit
+                    <br>
+                    <br>
+                    Can fault be accessed anytime: No
+                    <br>
+                    How to access fault: The corner near the cribs
+                    <br>
+                    <br>
+                    Extra information: The fault is only accesible to females at 5am on tuesdays when the sun is ta it's peak.
+
+                </dd>
+                <dd class="nhsuk-summary-list__actions">
+
+                  <a href="/frontend/v4/changeinfectionrisk">
+                    Change<span class="nhsuk-u-visually-hidden"> additional information provided</span>
+                  </a>
+            
+                </dd>
+    
+              </div>
+    
+
+
+    
+            </dl>
+    
+          </div>
+        </div>
+
+        <p class="nhsukbody">We’ll email you a copy of this report.</p>
+
+ 
+
+    <a href="/frontend/v4/end"><button class="nhsuk-button" data-module="nhsuk-button"
+        type="button">Submit report
+    </button>
+  </a>
+
+    </div>  
+  </div>
+{% endblock %}

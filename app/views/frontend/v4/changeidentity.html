@@ -1,0 +1,81 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Report a Fault Prototype v4
+{% endblock %}
+
+
+
+{% block beforeContent %} 
+<div class="app-phase-banner  nhsuk-u-padding-top-1 nhsuk-u-padding-bottom-1">
+    <div class="nhsuk-width-container app-phase-banner__container">
+      <p class="nhsuk-body-s app-phase-banner__content nhsuk-u-margin-bottom-1">
+        <strong class="nhsuk-tag app-phase-banner__tag">
+          PROTOTYPE
+        </strong>
+        <span class="app-phase-banner__text">
+        This is a prototype - your feedback will help us improve it.
+        </span>
+      </p>
+      <hr class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1">
+    </div>
+  </div>
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+
+    <div class="nhsuk-grid-column-two-thirds">
+
+
+        <h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-2">Your contact details</h1>
+        <p class="nhsuk-body">We’ll use your contact details to send you a copy of your report.</p>
+    
+
+      <!-- Add your content here -->
+      <div class="nhsuk-grid-row">
+
+        <div class="nhsuk-grid-column-two-thirds">
+            <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="input-width-20">
+                  Name
+                </label>
+                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+              </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="input-width-20">
+                  Trust email
+                </label>
+                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-20" name="test-width-20" type="text">
+              </div>
+
+              <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="input-width-20">
+                  Phone number
+                </label>
+                <input class="nhsuk-input nhsuk-input--width-20" id="input-width-10" name="test-width-20" type="tel">
+              </div>
+
+              <div class="nhsuk-checkboxes__item nhsuk-u-margin-bottom-4">
+                <input class="nhsuk-checkboxes__input" id="contact" name="contact" type="checkbox" value="email">
+                <label class="nhsuk-label nhsuk-checkboxes__label" for="contact">
+                  I do not have a trust email
+                </label>
+              </div>
+    
+ 
+              
+      </div>
+
+
+
+    </div>  
+    <a href="/frontend/v4/summary"><button class="nhsuk-button" data-module="nhsuk-button"
+        type="button">Save changes
+    </button>
+  </a>
+
+    </div>  
+  </div>
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Report a Fault Prototype v4
+{% endblock %}
+
+
+
+
+{% block beforeContent %}
+<div class="app-phase-banner  nhsuk-u-padding-top-1 nhsuk-u-padding-bottom-1">
+  <div class="nhsuk-width-container app-phase-banner__container">
+    <p class="nhsuk-body-s app-phase-banner__content nhsuk-u-margin-bottom-1">
+      <strong class="nhsuk-tag app-phase-banner__tag">
+        PROTOTYPE
+      </strong>
+      <span class="app-phase-banner__text">
+        This is a prototype - your feedback will help us improve it.
+      </span>
+    </p>
+    <hr
+      class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1">
+  </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <div class="done-panel">
+      <h1 class="nhsuk-heading-xl" id="completed">
+        Report submitted
+      </h1>
+
+      <p class="nhsuk-body">Your report has been submitted</p>
+
+      <p class="nhsuk-body-l">Fault ID: 345678</p>
+    </div>
+
+    <div><p class="nhsuk-body">Your report has been sent to the facilities management company responsible for your trust.
+      <br>
+
+      We’ve sent you an email with a copy of your report.
+    </p>
+    <h2>What happens next</h2>
+    <p class="nhsuk-body">We’ll email you when your report has been updated with a job number or comment from the
+      facilities management company.</p>
+
+
+    <h2>Send feedback on this service</h2>
+    <p class="nhsuk-body">Your comments will help us provide a better service.</p>
+
+    <a href="https://online1.snapsurveys.com/interview/fc68e904-811b-4b47-937b-683914e43f55">Let us know your feedback
+      (opens in new window)
+    </a>
+    </div>
+
+    
+
+    <div class="nhsuk-u-margin-top-3"><a href="/frontend/v4"><button class="nhsuk-button" data-module="nhsuk-button" type="button">Start a new report
+      </button>
+    </a>
+    </div>
+  </div>
+</div>
+{% endblock %}

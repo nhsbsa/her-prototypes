@@ -72,3 +72,6 @@ Where? Helpdes/v2
 2. Updated routing for helpdesk v3
 3. Updated "go back" link position on all administrator screens 
 4. Removed "go back" button from administrator confirmation pages
+
+8 May 2024
+1. New reporter flow with updated content and UR feedback "frontend v4"
