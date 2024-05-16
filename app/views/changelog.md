@@ -75,3 +75,6 @@ Where? Helpdes/v2
 
 8 May 2024
 1. New reporter flow with updated content and UR feedback "frontend v4"
+
+16 May 2024
+1. Update of contact details to cater for people without a trust email
