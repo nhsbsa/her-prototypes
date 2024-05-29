@@ -1,70 +1,58 @@
-{% extends 'layout.html' %}
+{% extends 'layout-landing.html' %}
 
 {% block pageTitle %}
-  HFR Prototype - Home
+HFR Prototype - Home
 {% endblock %}
 
-{% block beforeContent %}
-<nav class="nhsuk-breadcrumb" aria-label="Breadcrumb">
-    <div class="nhsuk-width-container">
-      <ol class="nhsuk-breadcrumb__list">
-        <li class="nhsuk-breadcrumb__item"><a class="nhsuk-breadcrumb__link" href="/">Home</a></li>
-  
-      </ol>
-    </div>
-  </nav>
-{% endblock %}
 
 {% block content %}
-  <div class="nhsuk-grid-row">
+<div class="nhsuk-grid-row">
 
-    <div class="nhsuk-grid-column-full">
+  <div class="nhsuk-grid-column-two-thirds">
+    <h1>Report a fault</h1>
+    <p>This service can be used by trusts with Private Finance Initiative (PFI) contracts to:</p>
+    <ul>
+      <li>report facility maintenance faults digitally</li>
+      <li>manage fault records</li>
+      <li>record communications with facilities management companies</li>
+    </ul>
 
-        <ul class="nhsuk-grid-row nhsuk-card-group">
-            <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
-          
-              <div class="nhsuk-card nhsuk-card--clickable">
-                <div class="nhsuk-card__content">
-                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                    <a class="nhsuk-card__link" href="/frontend/list">Frontend</a>
-                  </h2>
-                  <p class="nhsuk-card__description">To view the various versions of the front facing report a fault page, click here</p>
-          
-                </div>
-              </div>
-          
-            </li>
-            <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
-          
-              <div class="nhsuk-card nhsuk-card--clickable">
-                <div class="nhsuk-card__content">
-                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                    <a class="nhsuk-card__link" href="/admin/list">Administrator</a>
-                  </h2>
-                  <p class="nhsuk-card__description">To view the various versions of the administrator site where trusts can be created and deactivated and modified, click here</p>
-          
-                </div>
-              </div>
-          
-            </li>
-            <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
-          
-              <div class="nhsuk-card nhsuk-card--clickable">
-                <div class="nhsuk-card__content">
-                  <h2 class="nhsuk-card__heading nhsuk-heading-m">
-                    <a class="nhsuk-card__link" href="/helpdesk/list">Helpdesk</a>
-                  </h2>
-                  <p class="nhsuk-card__description">To view all versions of the helpdesk where you can view faults reported by a trust, click here</p>
-          
-                </div>
-              </div>
-          
-            </li>
-          </ul>
+    <h2>Report faults</h2>
 
-      <!-- Add your content here -->
+    <p>Any staff member with a valid hospital email address can use the fault reporting tool.
+      <br>You do not need to create an account or sign in with a password.
+    </p>
+    <p>You can also add photos to your report to help engineers find the problem quickly.</p>
 
-    </div>  
+    <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <p>If your trust is using this service, contact your operator for a link to start reporting faults.</p>
+    </div>
+
+    <h2>Manage reports and record communications in a dashboard</h2>
+    <p>Trust facilities management staff can use our dashboard tool to:</p>
+    <ul>
+      <li>track how many reports are made and how quickly they are resolved</li>
+      <li>record all communications with facilities management companies in one place.</li>
+    </ul>
+
+    <a class="nhsuk-button" href="#" role="button" draggable="false">Sign in to your trust dashboard</a>
+
+    <h2>To join the Report a fault service, you need to:</h2>
+    <ul>
+      <li>fill in this form with your trust details</li>
+      <li>send the form to ????</li>
+    </ul>
+    <p>We’ll then send you all the details you need to start using this service.</p>
+
+    <h2>Contact us</h2>
+    <p>Email ***address*** if you need help signing up or if you’re having problems accessing the service.</p>
+
+
+
+    <!-- Add your content here -->
 
   </div>
+
+</div>
 {% endblock %}
