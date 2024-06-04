@@ -84,3 +84,5 @@ Where? Helpdes/v2
 2. Added a confirmation page for closed faults
 3. Created helpdesk/v4
 4. Iteration 1 of landing page - ./home
+5. Made copy changes on stakeholder request
+
