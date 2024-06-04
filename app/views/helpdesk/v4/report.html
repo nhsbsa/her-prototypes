@@ -1,0 +1,263 @@
+{% extends 'layout-acc.html' %}
+
+{% block pageTitle %}
+Fault Operator Prototype v2
+{% endblock %}
+
+
+{% block content %}
+<div class="nhsuk-width-container">
+
+  <main class="nhsuk-main-wrapper nhsuk-u-padding-bottom-4" id="maincontent" role="main">
+    <div class="nhsuk-grid-row">
+
+      <div class="nhsuk-grid-column-full">
+        <div class="nhsuk-back-link">
+
+          <a class="nhsuk-back-link__link" href="/helpdesk/v4/faultlist">
+            <svg class="nhsuk-icon nhsuk-icon__chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+              aria-hidden="true" height="24" width="24">
+              <path
+                d="M8.5 12c0-.3.1-.5.3-.7l5-5c.4-.4 1-.4 1.4 0s.4 1 0 1.4L10.9 12l4.3 4.3c.4.4.4 1 0 1.4s-1 .4-1.4 0l-5-5c-.2-.2-.3-.4-.3-.7z">
+              </path>
+            </svg>
+            Back to fault list</a>
+        </div>
+
+        <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+            <div>
+              <h1 class="nhsuk-heading-xl">Report summary</h1>
+            </div>
+
+            <form>
+
+              <div class="nhsuk-form-group">
+
+                <fieldset class="nhsuk-fieldset">
+
+
+                  <div class="nhsuk-radios nhsuk-radios--conditional">
+
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="contact-1" name="contact" type="radio" value="email"
+                        aria-controls="conditional-contact-1" aria-expanded="false">
+                      <label class="nhsuk-label nhsuk-radios__label" for="contact-1">
+                        Add CAFM reference or a comment
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-1">
+
+                      <div class="nhsuk-form-group nhsuk-u-width-two-thirds">
+                        <label class="nhsuk-label" for="example">
+                          CAFM reference ID
+                        </label>
+                        <input class="nhsuk-input nhsuk-input--width-10" id="example" name="example" type="text">
+                      </div>
+
+                      <div class="nhsuk-form-group nhsuk-u-width-two-thirds">
+                        <label class="nhsuk-label" for="example">
+                          Additional comments
+                        </label>
+                        <textarea class="nhsuk-textarea" id="example" name="example" rows="5"
+                          aria-describedby="example-hint"></textarea>
+                      </div>
+
+
+                    </div>
+
+                    <div class="nhsuk-radios__item">
+                      <input class="nhsuk-radios__input" id="contact-2" name="contact" type="radio" value="phone"
+                        aria-controls="conditional-contact-2" aria-expanded="false">
+                      <label class="nhsuk-label nhsuk-radios__label" for="contact-2">
+                        Mark as duplicate
+                      </label>
+                    </div>
+
+                    <div class="nhsuk-radios__conditional nhsuk-radios__conditional--hidden" id="conditional-contact-2">
+
+                      <div class="nhsuk-form-group nhsuk-u-width-two-thirds">
+                        <label class="nhsuk-label" for="example2">
+                          CAFM reference ID
+                        </label>
+                        <input class="nhsuk-input nhsuk-input--width-10" id="example2" name="example2" type="text">
+                      </div>
+                      <p class="nhsuk-body">
+                        or
+                      </p>
+
+                      <div class="nhsuk-form-group nhsuk-u-width-two-thirds">
+                        <label class="nhsuk-label" for="example3">
+                          Fault ID
+                        </label>
+                        <input class="nhsuk-input nhsuk-input--width-10" id="example3" name="example3" type="text">
+                      </div>
+
+
+                    </div>
+
+
+
+                  </div>
+
+                  <br>
+                  <br>
+
+
+                  <a class="nhsuk-button" data-module="nhsuk-button" href="/helpdesk/v4/openupdate" draggable="false"
+                    role="button">
+                    Update status
+                  </a>
+
+                </fieldset>
+
+
+              </div>
+            </form>
+
+
+
+
+          </div>
+        </div>
+
+        <div class="nhsuk-grid-row">
+
+          <div class="nhsuk-grid-column-two-thirds">
+
+
+            <dl class="nhsuk-summary-list">
+
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Contact details
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  Jane Foster
+                  <br>
+                  jane@nhs.net
+                  <br>
+                  73213 98763
+                </dd>
+
+
+              </div>
+
+
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Where is the fault?
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  Location title: User response
+                  <br>
+                  Wing (optional): D7
+                  <br>
+                  Ward (optional): Antenatal
+                  <br>
+                  More details(optional): The corner near the cribs
+
+                </dd>
+
+
+              </div>
+
+
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  What kind of fault is it?
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  Broken pipes
+                  <br>
+                  the pipe is leaking water unto the electric socket by the cribs
+                </dd>
+
+
+
+              </div>
+
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  How urgent is the fault?
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  <strong class="nhsuk-tag nhsuk-tag--orange">
+                    URGENT
+                  </strong>
+                </dd>
+
+
+              </div>
+
+
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Uploaded photos
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  <a target="_blank" href="/helpdesk/v3/crack.jpg">
+                    <img src="/helpdesk/v3/crack.jpg" alt="fault-image">
+                  </a>
+                  <a target="_blank" href="/helpdesk/v3/image.jpg">
+                    <img src="/helpdesk/v3/image.jpg" alt="fault-image">
+                  </a>
+                  <a target="_blank" href="/helpdesk/v3/image2.jpg">
+                    <img src="/helpdesk/v3/image2.jpg" alt="fault-image">
+                  </a>
+                  <a target="_blank" href="/helpdesk/v3/window.jpg">
+                    <img src="/helpdesk/v3/window.jpg" alt="fault-image">
+                  </a>
+                  <a target="_blank" href="/helpdesk/v3/image3.jpg">
+                    <img src="/helpdesk/v3/image3.jpg" alt="fault-image">
+                  </a>
+                </dd>
+
+
+              </div>
+
+
+
+
+              <div class="nhsuk-summary-list__row">
+                <dt class="nhsuk-summary-list__key">
+                  Additional information
+                </dt>
+                <dd class="nhsuk-summary-list__value">
+                  Is there a risk of infection: Yes
+                  <br>
+                  Needed PPE: Longwinded explanation of hazmat suit
+                  <br>
+                  <br>
+                  Can fault be accessed anytime: No
+                  <br>
+                  How to access fault: The corner near the cribs
+                  <br>
+                  <br>
+                  Extra information: The fault is only accesible to females at 5am on tuesdays when the sun is ta it's
+                  peak.
+
+                </dd>
+
+
+              </div>
+
+
+
+
+            </dl>
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+  </main>
+</div>
+
+{% endblock %}

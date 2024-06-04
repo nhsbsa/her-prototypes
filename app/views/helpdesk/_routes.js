@@ -30,5 +30,18 @@ router.post('/v3/closeconfirmation', function (req, res) {
     }
 });
 
+//v4
+router.post('/v4/closeconfirmation', function (req, res) {
+
+    let resolveStatus = req.session.data['close-confirmation'];
+
+    if (resolveStatus === 'yes') {
+        res.redirect('/helpdesk/v4/closeconfirmed');
+
+    } else {
+        res.redirect('/helpdesk/v4/openupdate');
+    }
+});
+
 //Do not edit below this line
 module.exports = router;

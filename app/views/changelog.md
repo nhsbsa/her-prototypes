@@ -78,3 +78,9 @@ Where? Helpdes/v2
 
 16 May 2024
 1. Update of contact details to cater for people without a trust email
+
+4 June 2024
+1. Updated fault summary presentation in operator journey 
+2. Added a confirmation page for closed faults
+3. Created helpdesk/v4
+4. Iteration 1 of landing page - ./home

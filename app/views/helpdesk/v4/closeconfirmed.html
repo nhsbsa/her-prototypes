@@ -1,0 +1,66 @@
+{% extends 'layout-admin.html' %}
+
+{% block pageTitle %}
+Trust Administrator Prototype v2
+{% endblock %}
+
+
+
+{% block beforeContent %}
+<div class="app-phase-banner  nhsuk-u-padding-top-1 nhsuk-u-padding-bottom-1">
+  <div class="nhsuk-width-container app-phase-banner__container">
+    <p class="nhsuk-body-s app-phase-banner__content nhsuk-u-margin-bottom-1">
+      <strong class="nhsuk-tag app-phase-banner__tag">
+        PROTOTYPE
+      </strong>
+      <span class="app-phase-banner__text">
+        This is a prototype - your <a href="#">feedback</a> will help us improve it.
+      </span>
+    </p>
+    <hr
+      class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1">
+  </div>
+</div>
+{% endblock %}
+
+
+
+<!--javascript:history.back()-->
+
+
+{% block content %}
+
+
+<div class="nhsuk-grid-row">
+  <div class="nhsuk-grid-column-two-thirds">
+
+    <div class="done-panel">
+      <h1 class="nhsuk-heading-xl" id="completed">
+        Fault closed
+      </h1>
+
+      <!--span id="trust-name">Trust name</span-->
+      <span class="nhsuk-body" id="trust-reporting-link">
+        Fault ID: </span><h2 class="nhsuk-heading-l">638758</h2>
+
+
+    </div>
+
+
+    <p>You have successfully closed this fault.</p>
+
+
+
+
+    <div class="nhsuk-grid-column-two-thirds nhsuk-u-padding-left-0">
+
+      <div class="nhsuk-u-margin-bottom-3"><a class="nhsuk-link nhsuk-link--no-visited-state "
+          href="/helpdesk/v4/closedfault">
+          View updated fault details.
+        </a>
+      </div>
+
+
+    </div>
+  </div>
+  {% endblock %}

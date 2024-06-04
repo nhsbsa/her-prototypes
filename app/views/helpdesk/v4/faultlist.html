@@ -1,0 +1,553 @@
+{% extends 'layout-acc.html' %}
+
+{% block pageTitle %}
+Fault Operator Prototype V2
+{% endblock %}
+
+
+{% block beforeContent %}
+<div class="app-phase-banner  nhsuk-u-padding-top-1 nhsuk-u-padding-bottom-1">
+	<div class="nhsuk-width-container app-phase-banner__container">
+		<p class="nhsuk-body-s app-phase-banner__content nhsuk-u-margin-bottom-1">
+			<strong class="nhsuk-tag app-phase-banner__tag">
+				PROTOTYPE
+			</strong>
+			<span class="app-phase-banner__text">
+				This is a prototype - your <a href="#">feedback</a> will help us improve it.
+			</span>
+		</p>
+		<hr
+			class="nhsuk-section-break nhsuk-section-break--m nhsuk-section-break--visible nhsuk-u-margin-top-1 nhsuk-u-margin-bottom-1">
+	</div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+
+	<main class="nhsuk-main-wrapper nhsuk-u-padding-bottom-4" id="maincontent" role="main">
+		<div class="nhsuk-grid-row">
+
+			<div class="nhsuk-grid-column-full">
+
+				<h1 class="nhsuk-heading-xl nhsuk-u-margin-bottom-3">Her Majesty's Hospital of Blessed Souls</h1>
+				<!--This is pulled dynamically based on the defined trust name-->
+
+			</div>
+
+
+
+
+			<div class="nhsuk-grid-column-full">
+				<div class="custom-filter">
+					<div class="nhsuk-grid-column-full">
+
+						<div class="nhsuk-grid-column-one-quarter nhsuk-u-padding-left-0"><!--Search field-->
+							<div class="nhsuk-form-group">
+								<label class="nhsuk-label" for="input-width-10">
+									Keyword
+								</label>
+								<input class="nhsuk-input nhsuk-input--width-10" id="input-width-10"
+									name="test-width-10" type="text">
+							</div>
+						</div>
+
+						<div class="nhsuk-grid-column-two-thirds"><!-- Select set-->
+
+							<div
+								class="nhsuk-form-group nhsuk-grid-column-one-third nhsuk-u-padding-left-1 nhsuk-u-padding-right-1 nhsuk-u-margin-bottom-0">
+								<!--Reporters are not defined on administrator side, only allowed domains, so this info comes from the frontend journey when the form asks for "Trust email"-->
+								<label class="nhsuk-label" for="select-1">
+									Fault reporter
+								</label>
+								<select class="nhsuk-select" id="select-1" name="select-1">
+									<option value="1" selected>All reporters</option>
+									<option value="2">Corti Kostroyd</option>
+									<option value="3">Inga Yetti</option>
+									<option value="4">John Weasely</option>
+								</select>
+							</div>
+							<div
+								class="nhsuk-form-group nhsuk-grid-column-one-third nhsuk-u-padding-left-1 nhsuk-u-padding-right-1 nhsuk-u-margin-bottom-0">
+								<!--Fault status are defined by the PFI, If helpdesk reference has been added, it is open, if it has not been added, it pending, if it has been resolved it is closed-->
+								<label class="nhsuk-label" for="select-1">
+									Fault status
+								</label>
+								<select class="nhsuk-select" id="select-1" name="select-1">
+									<option value="1" selected>All faults</option>
+									<option value="2">Open</option>
+									<option value="3">Closed</option>
+									<option value="4">Pending</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="nhsuk-grid-column-full nhsuk-u-margin-top-4"><!--Date pickers-->
+						<div class="nhsuk-form-group">
+							<fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group"
+								style="display: inline-block;">
+
+
+								<div class="nhsuk-date-input" id="example">
+									<div class="nhsuk-date-input__item">
+										<div class="nhsuk-form-group">
+											<label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+												Day
+											</label>
+											<input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+												id="example-day" name="example-day" type="text" pattern="[0-9]*"
+												inputmode="numeric">
+										</div>
+									</div>
+									<div class="nhsuk-date-input__item">
+										<div class="nhsuk-form-group">
+											<label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+												Month
+											</label>
+											<input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+												id="example-month" name="example-month" type="text" pattern="[0-9]*"
+												inputmode="numeric">
+										</div>
+									</div>
+									<div class="nhsuk-date-input__item">
+										<div class="nhsuk-form-group">
+											<label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+												Year
+											</label>
+											<input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4"
+												id="example-year" name="example-year" type="text" pattern="[0-9]*"
+												inputmode="numeric">
+										</div>
+									</div>
+								</div>
+							</fieldset>
+							<p style="display: inline-block; margin-right: 30px;">to</p>
+							<fieldset class="nhsuk-fieldset" aria-describedby="example-hint" role="group"
+								style="display: inline-block;">
+
+
+								<div class="nhsuk-date-input" id="example">
+									<div class="nhsuk-date-input__item">
+										<div class="nhsuk-form-group">
+											<label class="nhsuk-label nhsuk-date-input__label" for="example-day">
+												Day
+											</label>
+											<input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+												id="example-day" name="example-day" type="text" pattern="[0-9]*"
+												inputmode="numeric">
+										</div>
+									</div>
+									<div class="nhsuk-date-input__item">
+										<div class="nhsuk-form-group">
+											<label class="nhsuk-label nhsuk-date-input__label" for="example-month">
+												Month
+											</label>
+											<input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-2"
+												id="example-month" name="example-month" type="text" pattern="[0-9]*"
+												inputmode="numeric">
+										</div>
+									</div>
+									<div class="nhsuk-date-input__item">
+										<div class="nhsuk-form-group">
+											<label class="nhsuk-label nhsuk-date-input__label" for="example-year">
+												Year
+											</label>
+											<input class="nhsuk-input nhsuk-date-input__input nhsuk-input--width-4"
+												id="example-year" name="example-year" type="text" pattern="[0-9]*"
+												inputmode="numeric">
+										</div>
+									</div>
+								</div>
+							</fieldset>
+
+							<a href="/helpdesk/v4/faultlist"><button
+									class="nhsuk-button nhsuk-u-margin-top-3 nhsuk-u-margin-bottom-5"
+									data-module="nhsuk-button" type="submit" style="float: right;">
+									Apply filters
+								</button></a>
+						</div>
+
+					</div>
+
+					<div class="nhsuk-grid-column-full  nhsuk-u-margin-bottom-4">
+						<a href="/helpdesk/v4/faultlist" class="nhsuk-link nhsuk-link--no-visited-state">Reset
+							filters</a>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="nhsuk-grid-column-full nhsuk-u-margin-top-3">
+				<button class="nhsuk-button nhsuk-button--secondary" data-module="nhsuk-button" type="button"
+					style="float: right;">
+					Export table
+				</button>
+			</div>
+
+
+			<div class="nhsuk-grid-column-full">
+
+				<div class="nhsuk-form-group nhsuk-table__head nhsuk-u-margin-top-4 nhsuk-u-margin-bottom-7">
+					<!--This is for the table-->
+					<table role="table" class="nhsuk-table-responsive">
+						<caption class="nhsuk-table__caption nhsuk-u-visually-hidden">Reported faults</caption>
+						<thead role="rowgroup">
+							<tr role="row">
+								<th role="columnheader" class="" scope="col">
+									Fault ID
+								</th>
+								<th role="columnheader" class="" scope="col">
+									Fault name
+								</th>
+								<th role="columnheader" class="" scope="col">
+									Fault location
+								</th>
+								<th role="columnheader" class="" scope="col">
+									Date and time
+								</th>
+								<th role="columnheader" class="" scope="col">
+									Status
+								</th>
+								<th role="columnheader" class="" scope="col">
+									Action
+								</th>
+							</tr>
+						</thead>
+						<tbody class="nhsuk-table__body">
+							<tr role="row" class="nhsuk-table__row">
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault ID </span>X0000165
+								</td>
+								
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault name</span>Broken glass
+									frame
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault location </span>X678,
+									Angel Wing
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Date and time
+									</span>12/01/2024, 09:37 AM
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Status </span><strong
+										class="nhsuk-tag nhsuk-tag--grey">
+										PENDING
+									</strong>
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Action </span><a
+										href="/helpdesk/v4/pendingreport" class="nhsuk-link--no-visited-state">Review
+										fault</a>
+								</td>
+							</tr>
+							<tr role="row" class="nhsuk-table__row">
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault ID </span>X0000164
+								</td>
+								
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault name</span>Faulty door
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault location </span>First
+									floor, Cafeteria
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Date and time
+									</span>12/01/2024, 09:37 AM
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Status </span><strong
+										class="nhsuk-tag nhsuk-tag--yellow">
+										OPEN
+									</strong>
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Action </span><a
+										href="/helpdesk/v4/openupdate" class="nhsuk-link--no-visited-state">Review
+										fault</a>
+								</td>
+							</tr>
+							<tr role="row" class="nhsuk-table__row">
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault ID </span>X0000165
+								</td>
+								
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault name</span>Leaky pipe
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault location </span>Room 2,
+									Angel Wing
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Date and time
+									</span>12/02/2024, 09:37 AM
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Status </span><strong
+										class="nhsuk-tag nhsuk-tag--green">
+										CLOSED
+									</strong>
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Action </span><a
+										href="/helpdesk/v4/closedupdate" class="nhsuk-link--no-visited-state">Review
+										fault</a>
+								</td>
+							</tr>
+							<tr role="row" class="nhsuk-table__row">
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault ID </span>X0000164
+								</td>
+								
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault name</span>Faulty door
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault location </span>First
+									floor, Cafeteria
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Date and time
+									</span>12/01/2024, 09:37 AM
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Status </span><strong
+										class="nhsuk-tag nhsuk-tag--yellow">
+										OPEN
+									</strong>
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Action </span><a
+										href="/helpdesk/v4/openupdate" class="nhsuk-link--no-visited-state">Review
+										fault</a>
+								</td>
+							</tr>
+							<tr role="row" class="nhsuk-table__row">
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault ID </span>X0000165
+								</td>
+								
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault name</span>Broken glass
+									frame
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault location </span>X678,
+									Angel Wing
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Date and time
+									</span>12/01/2024, 09:37 AM
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Status </span><strong
+										class="nhsuk-tag nhsuk-tag--grey">
+										PENDING
+									</strong>
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Action </span><a
+										href="/helpdesk/v4/pendingreport" class="nhsuk-link--no-visited-state">Review
+										fault</a>
+								</td>
+							</tr>
+							<tr role="row" class="nhsuk-table__row">
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault ID </span>X0000165
+								</td>
+								
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault name</span>Broken glass
+									frame
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault location </span>X678,
+									Angel Wing
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Date and time
+									</span>12/01/2024, 09:37 AM
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Status </span><strong
+										class="nhsuk-tag nhsuk-tag--grey">
+										PENDING
+									</strong>
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Action </span><a
+										href="/helpdesk/v4/pendingreport" class="nhsuk-link--no-visited-state">Review
+										fault</a>
+								</td>
+							</tr>
+							<tr role="row" class="nhsuk-table__row">
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault ID </span>X0000164
+								</td>
+								
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault name</span>Faulty door
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault location </span>First
+									floor, Cafeteria
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Date and time
+									</span>12/01/2024, 09:37 AM
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Status </span><strong
+										class="nhsuk-tag nhsuk-tag--yellow">
+										OPEN
+									</strong>
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Action </span><a
+										href="/helpdesk/v4/openupdate" class="nhsuk-link--no-visited-state">Review
+										fault</a>
+								</td>
+							</tr>
+							<tr role="row" class="nhsuk-table__row">
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault ID </span>X0000165
+								</td>
+								
+								
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault name</span>Leaky pipe
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault location </span>Room 2,
+									Angel Wing
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Date and time
+									</span>12/02/2024, 09:37 AM
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Status </span><strong
+										class="nhsuk-tag nhsuk-tag--green">
+										CLOSED
+									</strong>
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Action </span><a
+										href="/helpdesk/v4/closedupdate" class="nhsuk-link--no-visited-state">Review
+										fault</a>
+								</td>
+							</tr>
+							<tr role="row" class="nhsuk-table__row">
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault ID </span>X0000165
+								</td>
+								
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault name</span>Leaky pipe
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault location </span>Room 2,
+									Angel Wing
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Date and time
+									</span>12/02/2024, 09:37 AM
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Status </span><strong
+										class="nhsuk-tag nhsuk-tag--green">
+										CLOSED
+									</strong>
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Action </span><a
+										href="/helpdesk/v4/closedupdate" class="nhsuk-link--no-visited-state">Review
+										fault</a>
+								</td>
+							</tr>
+							<tr role="row" class="nhsuk-table__row">
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault ID </span>X0000165
+								</td>
+								
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault name</span>Leaky pipe
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Fault location </span>Room 2,
+									Angel Wing
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Date and time
+									</span>12/02/2024, 09:37 AM
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Status </span><strong
+										class="nhsuk-tag nhsuk-tag--green">
+										CLOSED
+									</strong>
+								</td>
+								<td role="cell" class="nhsuk-table__cell">
+									<span class="nhsuk-table-responsive__heading">Action </span><a
+										href="/helpdesk/v4/closedupdate" class="nhsuk-link--no-visited-state">Review
+										fault</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="nhsuk-grid-column-full">
+				<nav class="nhsuk-pagination nhsuk-u-margin-bottom-2 nhsuk-u-margin-top-3" role="navigation"
+					aria-label="Pagination">
+					<ul class="nhsuk-list nhsuk-pagination__list">
+						<li class="nhsuk-pagination-item--previous nhsuk-u-visually-hidden">
+							<a class="nhsuk-link--no-visited-state nhsuk-pagination__link nhsuk-pagination__link--prev"
+								href="/helpdesk/v4/faultlist">
+								<span class="nhsuk-pagination__title">Previous</span>
+								<span class="nhsuk-u-visually-hidden">:</span>
+								<span class="nhsuk-pagination__page nhsuk-u-visually-hidden">1</span>
+								<svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+									<path
+										d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z">
+									</path>
+								</svg>
+							</a>
+						</li>
+						<li class="nhsuk-pagination-item--next">
+							<a class="nhsuk-link--no-visited-state nhsuk-pagination__link nhsuk-pagination__link--next"
+								href="/helpdesk/v4/faultlist2">
+								<span class="nhsuk-pagination__title">Next</span>
+								<span class="nhsuk-u-visually-hidden">:</span>
+								<span class="nhsuk-pagination__page nhsuk-u-visually-hidden">2</span>
+								<svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg"
+									viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+									<path
+										d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z">
+									</path>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+
+
+
+		</div>
+	</main>
+</div>
+<!--Close of grid column-->
+
+
+
+
+{% endblock %}
